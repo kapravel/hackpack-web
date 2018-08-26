@@ -31,6 +31,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+header_pages:
+  - about.md
+  - sponsors.md
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
