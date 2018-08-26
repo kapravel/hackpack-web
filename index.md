@@ -3,9 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Welcome to HackPack
+title: HackPack
 ---
 
+# Welcome to HackPack
 We are a student group at North Carolina State University that is interested in computer security and Capture The Flag (CTF) competitions.
 
 [Find us on Slack](https://ncsu-hackpack.slack.com/)
