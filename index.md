@@ -17,7 +17,7 @@ We are a student group at North Carolina State University that is interested in 
 
 Wednesdays: 6pm
 
-Fridays: 5pm
+Fridays: 4:15pm
 
 Location: 2220 Engineering Building III, Centennial Campus
 
