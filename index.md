@@ -11,9 +11,7 @@ We are a student group at North Carolina State University that is interested in 
 
 [Find us on Slack](https://ncsu-hackpack.slack.com/)
 
-[NCSU organization page](https://getinvolved.ncsu.edu/organization/HackPack/)
-
-# Fall'18 meeting times
+# Spring'19 meeting times
 
 Wednesdays: 6pm
 
