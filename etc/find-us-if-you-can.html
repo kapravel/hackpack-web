@@ -168,10 +168,24 @@ body {
 .crt {
   animation: textShadow 1.6s infinite;
 }
+@keyframes strayFlicker {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  85% { opacity: 1.0; }
+  90% { opacity: 0.8; }
+  95% { opacity: 1.0; }
+  100% { opacity: 0; }
+}
+.hint {
+  animation: strayFlicker 3.0s infinite;
+  color: #88ffcc;
+  font-family: monospace;
+}
 </style>
 </head>
-<body onload="setTimeout(function() { window.location = 'https://www.dcode.fr/monoalphabetic-substitution';}, 5000);">
-<pre class="crt">
+<body>
+<div class="crt">
+<pre>
   "Otuwu zwu oeb phslf bg rwydobxwzdty hs othf ebwil:
   rwydobxwzdty otzo ehii fobd ybaw phl fhfouw gwbc wuzlhsx ybaw ghiuf,
   zsl rwydobxwzdty otzo ehii fobd czvbw xbquwscusof gwbc wuzlhsx ybaw ghiuf."
@@ -184,5 +198,8 @@ Othf cuffzxu hf zs unzcdiu bg otu gbwcuw.  Rbcu tzsx bao ehot otu TzrpDzrp zo
 SRFA hs UK3 Wbbc 2220 bs Gwhlzyf zo 1600 tbawf zsl yba chxto vafo iuzws fbcuothsx
 zkbao otu izoouw.
 </pre>
+<br>
+<a class="hint" href="https://www.dcode.fr/monoalphabetic-substitution">HINT</a>
+</div>
 </body>
 </html>
