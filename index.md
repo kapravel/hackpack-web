@@ -11,11 +11,11 @@ We are a student group at North Carolina State University that is interested in 
 
 [Find us on Slack](https://ncsu-hackpack.slack.com/)
 
-# Fall'19 meeting times
+# Spring'19 meeting times
 
 Fridays: 4:15pm
 
-Location: 1228 Engineering Building II, Centennial Campus
+Location: 1229 Engineering Building II, Centennial Campus
 
 # Upcoming meetings and CTFs
 
