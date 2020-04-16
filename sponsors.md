@@ -28,6 +28,9 @@ permalink: /sponsors/
 ![]({{"https://www.merck.com/images/merck-logo-inventing-for-life.png"}}){:class="picture"}
 ![]({{"https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/PRA_Health_Sciences.svg/1200px-PRA_Health_Sciences.svg.png"}}){:class="picture"}
 
+![]({{"https://images.squarespace-cdn.com/content/553e8918e4b0c79e77e09c4d/1533042369230-8GOPLMJSBUNNG0JH62J8/SiteLogo.png?content-type=image%2Fpng"}}){:class="picture"}
+
+
 ### Part of the infrastructure is sponsored by [g.co/cloud](https://g.co/cloud).
 
 {% comment %}
