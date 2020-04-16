@@ -15,8 +15,7 @@ permalink: /sponsors/
 
 ### HackPack CTF'20 is sponsored by the following NCSU ePartners:
 
-
-![]({{"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/BB%26T_Logo.svg/640px-BB%26T_Logo.svg.png"}}){:class="picture"}
+![]({{"/../assets/bbt_truist.jpg"}}){:class="picture"}
 
 ![]({{"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/640px-Cisco_logo.svg.png"}}){:class="picture"}
 
