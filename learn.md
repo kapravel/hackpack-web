@@ -1,3 +1,9 @@
+---
+layout: page
+title: Learn
+permalink: /learn/
+---
+
 ## Learning material
 
 ### Get yourself familiar with the subject
