@@ -4,8 +4,6 @@ title: Learn
 permalink: /learn/
 ---
 
-## Learning material
-
 ### Get yourself familiar with the subject
 * [What is CTF?](https://www.youtube.com/watch?v=8ev9ZX9J45A)
 * [How To Learn Hacking With CTFs](https://www.youtube.com/watch?v=Lus7aNf2xDg)
