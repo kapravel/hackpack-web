@@ -4,7 +4,7 @@ title: Learn
 permalink: /learn/
 ---
 
-### Get yourself familiar with the subject
+### Get yourself familiar with CTFs
 * [What is CTF?](https://www.youtube.com/watch?v=8ev9ZX9J45A)
 * [How To Learn Hacking With CTFs](https://www.youtube.com/watch?v=Lus7aNf2xDg)
 * [Why CTF? + other resources](https://trailofbits.github.io/ctf/intro/)
@@ -22,26 +22,27 @@ permalink: /learn/
 * [rr - Record and Replay Framework](https://github.com/mozilla/rr)
 * [pwntools](https://github.com/Gallopsled/pwntools)
 * [lisa](https://github.com/ant4g0nist/lisa.py)
+* [angr](https://angr.io/)
+* [Ghidra](https://ghidra-sre.org/)
+* Disassemblers
+    * [Zydis](https://github.com/zyantific/zydis)
+    * [Capstone](http://www.capstone-engine.org/)
+* gdb tweaks
+    * [gdbinit](https://github.com/gdbinit/gdbinit)
+    * [peda - Python Exploit Development Assistance for GDB](https://github.com/longld/peda)
+    * [voltron](https://github.com/snare/voltron)
 
-### Repositories of old CTFs
+### Repositories with challenges from old CTFs
 * [capctf: Collection of multiple old CTFs](http://captf.com/)
 * [CSAW CTF](https://365.csaw.io/challenges)
 
-## Domains
+## Exploitation techniques
+
 ### Binary exploitation
 * [Binary exploitation playlist](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
 
-### Disassemblers
-* [Zyan](https://github.com/zyantific/zyan-disassembler-engine)
-* [Capstone](http://www.capstone-engine.org/)
-
 ### Heap overflows
 * [A repository for learning various heap exploitation techniques](https://github.com/shellphish/how2heap)
-
-### gdb tweaks
-* [gdbinit](https://github.com/gdbinit/gdbinit)
-* [peda - Python Exploit Development Assistance for GDB](https://github.com/longld/peda)
-* [voltron](https://github.com/snare/voltron)
 
 ### Web
 * [Web Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet)
