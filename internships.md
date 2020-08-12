@@ -9,7 +9,7 @@ If you like CTFs and you are interested in getting some research experience in c
 
 ## How to apply
 
-If you are interested to apply, send an email to Alex Kapravelos ([akaprav@nscu.edu](mailto:akaprav@nscu.edu)) to introduce yourself and provide the following information:
+If you are interested to apply, send an email to Alex Kapravelos ([akaprav@ncsu.edu](mailto:akaprav@ncsu.edu)) to introduce yourself and provide the following information:
 * your resume or CV (including any CTF or research experience you have)
 * when would you like to arrive
 * your preference for the internship duration (3-6 months)
