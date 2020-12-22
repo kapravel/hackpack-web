@@ -4,7 +4,7 @@ title: Research Internships
 permalink: /internships/
 ---
 
--
+
 If you like CTFs and you are interested in getting some research experience in computer security, consider applying for an internship position at NCSU. The goal of the internship will be to conduct research for a few months that will result in an academic publication. Your faculty mentor will be [Alex Kapravelos](https://kapravelos.com) and you will be joining his research group for a few months (3-6 months are possible). The topic of your research will depend on the time that you will join the group and the current available projects. To get a general idea of the research topics that we are interested, take a look at our recent [publications](https://kapravelos.com/#publications). The internship is going to be paid.
 
 ## How to apply
