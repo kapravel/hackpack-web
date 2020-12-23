@@ -47,3 +47,4 @@ permalink: /learn/
 ### Web
 * [Web Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet)
 * [Gobuster (dirb/dirbuster replacement)](https://github.com/OJ/gobuster)
+* [Additional Web Cheatsheet](https://github.com/w181496/Web-CTF-Cheatsheet)
