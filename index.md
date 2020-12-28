@@ -13,9 +13,11 @@ We are a student group at North Carolina State University that is interested in 
 
 # Spring'21 meeting times
 
-Fridays: 4:15pm
+Fridays: 4:00pm
 
-Location: online (via Zoom)
+Location: Online (via Zoom)
+
+https://ncsu.zoom.us/j/92293883975
 
 # Upcoming meetings and CTFs
 
