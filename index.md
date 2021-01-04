@@ -15,9 +15,8 @@ We are a student group at North Carolina State University that is interested in 
 
 Fridays: 4:00pm
 
-Location: Online (via Zoom)
+[Location: Online (via Zoom)](https://ncsu.zoom.us/j/95906969070)
 
-https://ncsu.zoom.us/j/92293883975
 
 # Upcoming meetings and CTFs
 
