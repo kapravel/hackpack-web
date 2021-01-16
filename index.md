@@ -9,6 +9,8 @@ title: HackPack
 # Welcome to HackPack
 We are a student group at North Carolina State University that is interested in computer security and Capture The Flag (CTF) competitions.
 
+Our goal is to create a friendly environment where students can learn and practice security concepts free of judgement
+
 Join our Discord to keep up to date!
 <iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
