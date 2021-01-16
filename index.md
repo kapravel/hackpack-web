@@ -9,13 +9,14 @@ title: HackPack
 # Welcome to HackPack
 We are a student group at North Carolina State University that is interested in computer security and Capture The Flag (CTF) competitions.
 
+Join our Discord to keep up to date!
+<iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
 # Spring '21 Meeting Times
 **When:** Fridays at 4:00pm
 
 **Where:** [Online (via Zoom)](https://ncsu.zoom.us/j/95906969070)
-
-Join our Discord to keep up to date!
-<iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
 # Upcoming Meetings and CTFs
