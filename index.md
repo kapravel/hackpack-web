@@ -20,7 +20,7 @@ Join our Discord to keep up to date!
 
 # Upcoming Meetings and CTFs
 
-<iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=bmNzdS5lZHVfbDdtZWt1cmN0dDdkdWMxNTQ3MTYwbTkxYjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%239E69AF&amp;showNav=1&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0" style="border-width:0" width="740" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ncsu.edu_l7mekurctt7duc1547160m91b8%40group.calendar.google.com&amp;color=%239E69AF&amp;showNav=1&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0" style="border-width:0" width="740" height="600" frameborder="0" scrolling="no"></iframe>
 
 # Faculty Advisor
 [Alexandros Kapravelos](https://kapravelos.com) is the faculty advisor of the HackPack group.
