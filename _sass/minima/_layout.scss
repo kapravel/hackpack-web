@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 3px solid $ncsu-red;
+  border-bottom: 8px solid $ncsu-red;
+  background-color: $ncsu-red;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -37,7 +38,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $nav-text-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
