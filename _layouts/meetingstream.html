@@ -12,15 +12,17 @@ layout: default
                 <p>&nbsp;</p>
                 {% assign last-year = current-year %}
         {% endif %}
+		
+		
 <div class="card border-secondary mb-3">
   <div class="card-header">
-        <a data-toggle="collapse" href="#collapse-example" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
+        <a data-toggle="collapse" data-target="#{{ presentation.shortname }}" href="#{{ presentation.shortname }}" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
             <i class="fa fa-chevron-down pull-right"></i>
-            Header
+            {{ presentation.Date }} - {{ presentation.Topic }}
         </a>
   </div>
 <div class="card-body">
-<div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+<div id="{{ presentation.shortname }}" class="collapse" aria-labelledby="heading-example">
  
         <table>
                 {% for item in presentation %}
@@ -33,5 +35,7 @@ layout: default
      </div>
    </div>
 </div>
+
+
 {% endfor %}
 

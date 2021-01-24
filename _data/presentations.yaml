@@ -1,12 +1,5 @@
-- Name:      rsync - Making backups with rsync
-  Presenter: Davis Claiborne
-  Date:      2020-11-10
-  Format:    Lightning Talk
-  Filetype:  PDF
-  Path:      2020-11-10-backups.pdf
-- Name:      rsync - Making backups with rsync
-  Presenter: Davis Claiborne
-  Date:      2020-11-10
-  Format:    Lightning Talk
-  Filetype:  PDF
-  Path:      2020-11-10-backups.pdf
+- Topic:          Binary Exploitation Part 1
+  Speaker:        Aidan Beggs
+  Date:           2020-09-18
+  Recording Link: https://youtu.be/7RM0XncmuHw
+  shortname:      binexpPT1
