@@ -29,10 +29,13 @@ layout: default
                   {% if item[0] != 'shortname' %}
                            <tr>
                                    <td>{{ item[0] }}:</td>
-                                   <td>{{ item[1] }}</td>
-                           {% if item[0] == 'Video Recording' %}
-			  	<iframe src="{{ item[1] }}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-			   {% endif %}
+                                   <td>
+                                   {% if item[0] == 'Video Recording' %}
+			  	        <iframe src="{{ item[1] }}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+			           {% else %}
+			                {{ item[1] }}
+			           {% endif %}
+                                   </td>
                            </tr>
                   {% endif %}
                 {% endfor %}
