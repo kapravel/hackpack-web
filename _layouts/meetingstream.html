@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% assign sorted-presentations = site.data.presentations %}
+{% assign last-year = nil %}
+{% for presentation in sorted-presentations %}
+        {% assign current-year = presentation.Date | date: "%Y" %}
+        {% if current-year != last-year %}
+                <a href="#{{ current-year }}"> <h1 id="{{ current-year }}">{{ current-year }}</h1></a>
+                <hr>
+                <p>&nbsp;</p>
+                {% assign last-year = current-year %}
+        {% endif %}
+		
+		
+<div class="card border-secondary mb-3">
+  <div class="card-header">
+        <a data-toggle="collapse" data-target="#{{ presentation.shortname }}" href="#{{ presentation.shortname }}" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
+            <i class="fa fa-chevron-down pull-right"></i>
+            {{ presentation.Date }} - {{ presentation.Topic }}
+        </a>
+  </div>
+<div class="card-body">
+<div id="{{ presentation.shortname }}" class="collapse" aria-labelledby="heading-example">
+ 
+        <table>
+                {% for item in presentation %}
+                        <tr>
+                                <td>{{ item[0] }}:</td>
+                                <td>{{ item[1] }}</td>
+                        </tr>
+                {% endfor %}
+        </table>
+     </div>
+   </div>
+</div>
+
+
+{% endfor %}
+
