@@ -1,0 +1,29 @@
+{% assign challenge = site.data.challenges[include.name] %}
+
+{% if challenge %}
+    <div class="card-header">
+        <strong>{{ challenge.title }}</strong>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>About: </strong>
+            {{ challenge.about }}
+        </li>
+        <li class="list-group-item"><strong>Connect: </strong>
+            <code>{{ challenge.connect }}</code>
+        </li>
+
+        {% if challenge.file_path %}
+            <li class="list-group-item">
+                <strong>Files: </strong>
+                <a href="{{ challenge.file_path }}" download> Download Files </a>
+            </li>
+        {% endif %}
+
+        <li class="list-group-item"><strong>Flag Hash: </strong>
+            <code>{{ challenge.flag_MD5 }}</code>
+        </li>
+    </ul>
+{% else %}
+    <li class="list-group-item">No chall here :(</li>
+{% endif %}
+

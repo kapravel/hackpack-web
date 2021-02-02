@@ -1,0 +1,13 @@
+test_chal:
+  title: test_chal
+  about: It's a pretty sweet challenge
+  connect: nc somewhere.com 8000
+  file_path: /assets/hackpack-logo.svg
+  flag_MD5: ho3smadho3smadho3smadho3smadho3smad
+
+amazing_rop:
+  title: amazing-rop
+  about: Beginner ROP challenge
+  connect: nc 4.tcp.ngrok.io 16875
+  flag_MD5: ho3smadho3smadho3smadho3smadho3smad
+

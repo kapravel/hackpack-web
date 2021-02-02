@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: learn
 title: Learn
 permalink: /learn/
+current_chal: test_chal
 ---
 
 ### Get yourself familiar with CTFs
