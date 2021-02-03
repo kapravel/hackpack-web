@@ -14,16 +14,17 @@ layout: default
         {% endif %}
 		
 		
-<div class="card border-secondary mb-3">
+<div class="card border-secondary mb-5">
   <div class="card-header">
-        <a data-toggle="collapse" data-target="#{{ presentation.shortname }}" href="#{{ presentation.shortname }}" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
+        <a data-toggle="collapse" data-target="#{{ presentation.shortname }}" 
+        href="#{{ presentation.shortname }}" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
             <i class="fa fa-chevron-down pull-right"></i>
             {{ presentation.Date }} - {{ presentation.Topic }}
         </a>
-  </div>
+</div>
+
 <div class="card-body">
-<div id="{{ presentation.shortname }}" class="collapse" aria-labelledby="heading-example">
- 
+        <div id="{{ presentation.shortname }}" class="collapse" aria-labelledby="heading-example">
         <table>
                 {% for item in presentation %}
                   {% if item[0] != 'shortname' %}
@@ -31,7 +32,7 @@ layout: default
                                    <td>{{ item[0] }}:</td>
                                    <td>
                                    {% if item[0] == 'Video Recording' %}
-			  	        <iframe src="{{ item[1] }}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+			  	        <iframe src="{{ item[1] }}" width="512" height="288" frameborder="0" allowfullscreen></iframe>
 			           {% else %}
 			                {{ item[1] }}
 			           {% endif %}
