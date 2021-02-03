@@ -2,7 +2,7 @@
 layout: learn
 title: Learn
 permalink: /learn/
-current_chal: test_chal
+current_chal: amazing_rop
 ---
 
 ### Get yourself familiar with CTFs

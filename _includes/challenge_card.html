@@ -2,15 +2,18 @@
 
 {% if challenge %}
     <div class="card-header">
-        <strong>{{ challenge.title }}</strong>
+        <strong><code>{{ challenge.title }}</code></strong>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong>About: </strong>
             {{ challenge.about }}
         </li>
-        <li class="list-group-item"><strong>Connect: </strong>
-            <code>{{ challenge.connect }}</code>
-        </li>
+
+        {% if challenge.connect %}
+            <li class="list-group-item"><strong>Connect: </strong>
+                <code>{{ challenge.connect }}</code>
+            </li>
+        {% endif %}
 
         {% if challenge.file_path %}
             <li class="list-group-item">
