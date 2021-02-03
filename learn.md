@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: learn
 title: Learn
 permalink: /learn/
+current_chal: amazing_rop
 ---
 
 ### Get yourself familiar with CTFs
