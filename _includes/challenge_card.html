@@ -5,20 +5,40 @@
         <strong><code>{{ challenge.title }}</code></strong>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item"><strong>About: </strong>
-            {{ challenge.about }}
+        <li class="list-group-item">
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <strong>About: </strong>
+                </div>
+                <div class="col-sm-10">
+                    {{ challenge.about }}
+                </div>
+            </div>
         </li>
 
         {% if challenge.connect %}
-            <li class="list-group-item"><strong>Connect: </strong>
-                <code>{{ challenge.connect }}</code>
+            <li class="list-group-item">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <strong>Connect: </strong>
+                    </div>
+                    <div class="col-sm-10">
+                        <code>{{ challenge.connect }}</code>
+                    </div>  
+                </div>
             </li>
         {% endif %}
 
         {% if challenge.file_path %}
             <li class="list-group-item">
-                <strong>Files: </strong>
-                <a href="{{ challenge.file_path }}" download> Download Files </a>
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <strong>Files: </strong>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="{{ challenge.file_path }}" download> Download Files </a>
+                    </div>
+                </div>
             </li>
         {% endif %}
 
