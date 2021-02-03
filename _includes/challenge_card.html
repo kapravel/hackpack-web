@@ -22,10 +22,46 @@
             </li>
         {% endif %}
 
-        <li class="list-group-item"><strong>Flag Hash: </strong>
-            <code>{{ challenge.flag_MD5 }}</code>
-        </li>
+        <li class="list-group-item">
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="flag" class="col-sm-6 col-form-label"><strong>Flag:</strong></label>
+                </div>
+                <div class="col-sm-8">
+                    <input class="form-control" id="flag" placeholder="hackpack{...}">
+                    <div class="valid-feedback">
+                        Great job! You are l33t &#128526;
+                    </div>
+                    <div class="invalid-feedback">
+                        Flag is incorrect. Try again!
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <button id="submit" onclick=checkFlag() class="btn btn-primary mb-2">Check</button>
+                </div>
+                
+                <!-- If you feel like cracking this, be my guest -->
+                <span hidden=true id="flag_MD5">{{ challenge.flag_MD5 }}</div>
+            </div>
+
+        </li> 
     </ul>
+
+    <script>
+        function checkFlag() {
+            let flag_input = document.getElementById("flag");
+            let flag = flag_input.value;
+            let actual_MD5 = document.getElementById("flag_MD5").innerText;
+            let flag_MD5 = hex_md5(flag);
+            
+            if(flag_MD5 == actual_MD5) {
+                flag_input.className = "form-control is-valid";
+            } else {
+                flag_input.className = "form-control is-invalid";
+            }
+        }
+    </script>
+
 {% else %}
     <li class="list-group-item">No chall here :(</li>
 {% endif %}
