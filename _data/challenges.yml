@@ -7,14 +7,14 @@ amazing_rop:
 
 xor_crypto1:
   title: xor_crypto1
-  about: XOR these two keys to get the flag! Be sure to do this as part of a script; you will need that code for the next two challenges
+  about: Decode these two keys from Base64 and XOR them keys to get the flag! Be sure to do this as part of a script; you will need that code for the next two challenges.
   file_path: /challenge_files/xor_crypto/ciphertext1.txt
   flag_MD5: f3f21959eb2474ae86505891cc674d3c
 
 xor_crypto2:
   title: xor_crypto2
   about: "This ciphertext has been XOR encrypted with a single length key. 
-  For example, if the key was 'f', each byte of the plaintext would be XORed with 'f'. 
+  For example, if the key was 'f', each byte of the plaintext would be XORed with 'f'. The cipher text is also in Base64, which you'll need to decode before XORing
   Submit the key in the following format: hackpack{KEY}"
   file_path: /challenge_files/xor_crypto/ciphertext2.txt
   flag_MD5: e52c05372502fd82a055a1ac0f3a8709
@@ -23,6 +23,7 @@ xor_crypto3:
   title: xor_crypto3
   about: "This ciphertext has been XOR encrypted with a variable length key. 
   For instance, if the key was 'wot', the first byte of the plaintext would be XORed with 'w', the second with 'o', the third with 't', and then it would loop back XOR the fourth character with 'w'
+  The cipher text is also in Base64, which you'll need to decode before XORing
   Submit the key in the following format: hackpack{KEY}"
   file_path: /challenge_files/xor_crypto/ciphertext3.txt
   flag_MD5: da16e0e7b05c71a9a10581ac16276710
