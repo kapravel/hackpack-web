@@ -3,7 +3,9 @@ layout: learn
 title: Learn
 permalink: /learn/
 current_challs:
-  - amazing_rop
+  - xor_crypto1
+  - xor_crypto2
+  - xor_crypto3
 ---
 
 ### Get yourself familiar with CTFs
