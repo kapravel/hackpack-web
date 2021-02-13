@@ -6,24 +6,27 @@ amazing_rop:
   flag_MD5: 18c11cef1dc29a707b38db4bfc1ca5a5
 
 xor_crypto1:
-  title: xor_crypto1
-  about: Decode these two keys from Base64 and XOR them keys to get the flag! Be sure to do this as part of a script; you will need that code for the next two challenges.
+  title: XOR Crypto - Intro
+  about: |
+      Decode these two keys from Base64 and XOR them keys to get the flag! <br> <br>
+      Be sure to do this as part of a script; you will need that code for the next two challenges.
   file_path: /challenge_files/xor_crypto/ciphertext1.txt
-  flag_MD5: f3f21959eb2474ae86505891cc674d3c
+  flag_MD5: f3f21959eb2474ae86505891cc674d3c # hackpack{XOR_A_WIZARD_HARRY}
 
 xor_crypto2:
-  title: xor_crypto2
-  about: "This ciphertext has been XOR encrypted with a single length key. 
-  For example, if the key was 'f', each byte of the plaintext would be XORed with 'f'. The cipher text is also in Base64, which you'll need to decode before XORing
-  Submit the key in the following format: hackpack{KEY}"
+  title: XOR Crypto - Easy-ish
+  about: |
+      This ciphertext has been XOR encrypted with a single length key. <br> <br>
+      For example, if the key was <code>f</code>, each byte of the plaintext would be XORed with <code>f</code>. <br> <br>
+      The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext2.txt
-  flag_MD5: e52c05372502fd82a055a1ac0f3a8709
+  flag_MD5: 1df5b08797f2e128618117d2983b5cfb # HACKPACK{WHAT_A_KAFKAESQUE_CHALLENGE}
 
 xor_crypto3:
-  title: xor_crypto3
-  about: "This ciphertext has been XOR encrypted with a variable length key. 
-  For instance, if the key was 'wot', the first byte of the plaintext would be XORed with 'w', the second with 'o', the third with 't', and then it would loop back XOR the fourth character with 'w'
-  The cipher text is also in Base64, which you'll need to decode before XORing
-  Submit the key in the following format: hackpack{KEY}"
+  title: XOR Crypto - Medium
+  about: |
+      This ciphertext has been XOR encrypted with a variable length key. <br> <br>
+      For instance, if the key was <code>wot</code>, the first byte of the plaintext would be XORed with <code>w</code>, the second with <code>o</code>, the third with <code>t</code>, and then it would loop around to XOR the fourth character with <code>w</code> <br> <br>
+      The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext3.txt
-  flag_MD5: da16e0e7b05c71a9a10581ac16276710
+  flag_MD5: e8ef8ea4ddecbf90e7fd049832db0220 # HACKPACK{MAYBE_NOW_YOULL_READ_THE_TOS_;)}
