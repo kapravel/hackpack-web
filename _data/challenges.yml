@@ -25,7 +25,7 @@ xor_crypto2:
 xor_crypto3:
   title: XOR Crypto - Medium
   about: |
-      This ciphertext has been XOR encrypted with a variable length key. <br> <br>
+      This ciphertext has been XOR encrypted with key of unknown length. <br> <br>
       For instance, if the key was <code>wot</code>, the first byte of the plaintext would be XORed with <code>w</code>, the second with <code>o</code>, the third with <code>t</code>, and then it would loop around to XOR the fourth character with <code>w</code> <br> <br>
       The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext3.txt
