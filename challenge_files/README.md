@@ -9,7 +9,7 @@ challenge_id: # Must be unique
       Challenge descriptions don't support Markdown (yet) <br>
       But <code>HTML/Bootstrap</code> formatting works. <br>
       https://getbootstrap.com/docs/5.0/content/reboot/
-  connect: nc 4.tcp.ngrok.io 16875
+  connect: nc somehost 8080
   file_path: /challenge_files/you_need_this_to_solve.zip
   flag_MD5: 18c11cef1dc29a707b38db4bfc1ca5a5 # Used to make the flag checker work. Make sure this is accurate!
 ```
