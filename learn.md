@@ -3,9 +3,11 @@ layout: learn
 title: Learn
 permalink: /learn/
 current_challs:
-  - xor_crypto1
-  - xor_crypto2
-  - xor_crypto3
+  - intro_to_re_01
+  - intro_to_re_02
+  - intro_to_re_03
+  - intro_to_re_04
+  - intro_to_re_05
 ---
 
 ### Get yourself familiar with CTFs

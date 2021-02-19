@@ -30,3 +30,99 @@ xor_crypto3:
       The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext3.txt
   flag_MD5: e8ef8ea4ddecbf90e7fd049832db0220 # HACKPACK{MAYBE_NOW_YOULL_READ_THE_TOS_;)}
+
+intro_to_re_01:
+  title: "picoGym RE, Part I: Need for Speed"
+  about: |
+    <h4>Original Description</h4>
+    <p>The name of the game is <a href="https://www.youtube.com/watch?v=8piqd2BWeGI">speed</a>.
+    Are you quick enough to solve this problem and keep it above 50 mph?</p>
+
+    <h4>Advice</h4>
+    <p>Use <a href="https://ghidra-sre.org/">Ghidra</a> to look at the binary's <code>main</code> function and figure out what is happening.
+    From there, you have options (which is common for RE problems):
+    <ul>
+      <li>Static RE: just read the disassembly/decompiler output until you can work out on paper/etc. what the answer is
+      <li>Dynamic RE: use a debugger like GDB (or other options, like LD_PRELOAD) to manipulate the flow of execution in the program and side-step the booby-trap
+    </ul></p>
+  file_path: /challenge_files/intro_to_re/need-for-speed
+  flag_MD5: 493e3603dc1b1cf9ff71a0ce6c0b03a3 # PICOCTF{Good job keeping bus #24c43740 speeding along!}
+
+intro_to_re_02:
+  title: "picoGym RE, Part II: Reverse Cipher"
+  about: |
+    <h4>Original Description</h4>
+    <p>We have recovered a binary and a text file. Can you reverse the flag?</p>
+
+    <h4>Advice</h4>
+    <p>Use Ghidra to understand the cipher algorithm.  Then write a simple program (e.g., in Python) to reverse that algorithm and decipher the flag.</p>
+  file_path: /challenge_files/intro_to_re/reverse-cipher.zip
+  flag_MD5: 5e7b2f5015770cdb18aa7ee070b6a962 # picoCTF{r3v3rs37ee84d27}
+
+intro_to_re_03:
+  title: "picoGym RE, Part III: Forky"
+  about: |
+    <h4>Original Description</h4>
+    <p>In this program, identify the last integer value that is passed as parameter to the function <code>doNothing()</code>.</p>
+
+    <h4>Advice</h4>
+    <p>Treat this as a pure-static RE problem.
+    You need to understand the semantics of the Unix system call <code>fork</code>
+    (and that processes can share memory, as they do in this case to have one single
+    copy of the key veriable stored between all of them).</p>
+    
+    <p>The flag is in the format <code>picoCTF{INTEGER_YOU_FOUND}</code>.
+    Be aware that <code>INTEGER_YOU_FOUND</code> can be negative.
+    You will have to consider:
+    <ul>
+      <li>machine word sizes (e.g., 32-bit vs. 64-bit integers) 
+      <li>2's complement binary encoding of signed numbers
+      <li>multi-byte integer Endianness
+    </ul></p>
+  file_path: /challenge_files/intro_to_re/forky
+  flag_MD5: 94369eee02c2a4c20f191c7c593d6600 # picoCTF{-721750240}
+
+intro_to_re_04:
+  title: "picoGym RE, Part IV: Assembly #4"
+  about: |
+    <h4>Original Description</h4>
+    <p>What will <code>asm4("picoCTF_724a2")</code> return?
+    Submit the flag as a hexadecimal value (starting with '0x').
+    NOTE: Your submission for this question will NOT be in the normal [picoCtf] flag format.</p>
+
+    <h4>Advice</h4>
+    <p>You are given a disassembly dump of a function taking a C string and returning an integer;
+    you need to figure out the integer returned for the string given above.</p>
+    <p>No cheating with Ghidra this time!  (<i>Not strictly true; but if you
+    get it into a form where Ghidra can help, you have it in a form where you don't really need Ghidra anymore...</i>)</p>
+    <p>The obvious solution is to manually decompile this assembly into C code that you can compile and run.
+    Of course, this approach requires some understanding of 
+    <ul>
+      <li>32-bit x86 (a.k.a. i386 or i686) assembly language syntax and machine instruction semantics
+      <li>the C calling convention (a.k.a. ABI) for GCC/Linux (i.e., how the compiler and system libraries use registers, the stack, etc.)
+    </ul>
+    A great resource for exploring these (in the C -> assembly direction) is <a href="https://godbolt.org/">Godbolt's Compiler Explorer</a>.
+    </p>
+
+    <p>There's also the "cheating" way, which get's us back to my first comment about getting it into a form usable with Ghidra.
+    Question to ponder: can you just "assemble" this source code back into an ELF binary module that could be loaded by Ghidra?
+    If not, why not?  What then?</p>
+  file_path: /challenge_files/intro_to_re/asm4.S
+  flag_MD5: 8eaed559146b3f2a013abadf6eca7b68 # 0x20c
+
+intro_to_re_05:
+  title: "picoGym RE, Part V: B1ll_Gat35"
+  about: |
+    <h4>Original Description</h4>
+    <p>Can you reverse this Windows Binary?</p>
+
+    <h4>Advice</h4>
+    <p>This is not quite a <i>classic</i> RE challenge that simply validates a flag you have to enter, but it's close.</p>
+    <p>The flag format is <code>PICOCTF{xxxxx}</code></p>
+    <p>This binary does not make for a pleasant experience in Ghidra if you aren't used to the quirks of Microsoft's C/C++ toolchain.
+    The original picoCtf hints recommending using a Windows VM and Windows debugging tools like OllyDbg are worth considering.</p>
+    <p>But it can be run and even debugged on a Linux system using Wine's <code>winedbg</code> toolchain.
+    Given a little persistence and cleverness in Ghidra finding critical points inside the program,
+    the Wine debugger is sufficient for you to side-step the obstacles and get a flag printed out.</p>
+  file_path: /challenge_files/intro_to_re/win-exec-1.exe
+  flag_MD5: 6a869501b88d73d529490849e9bbbeae # PICOCTF{These are the access codes to the vault: 1063340}
