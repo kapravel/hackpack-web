@@ -134,4 +134,23 @@ intro_to_web_01:
     <p>Hmm, do pirates really think they can hide a treasure without us knowing? Find the treasure and prove they are wrong</p>
     <p>This is basic web challenges. Only some level of poking is needed. Access the website here: <a href="http://e30f62bed013.ngrok.io/">link</a></p>
     <p>Flag format: hackpack{...}</p>
-  flag_MD5: 4191d8b8e46ae501a023538ea3177736  # PICOCTF{These are the access codes to the vault: 1063340}
+  connect: http://e30f62bed013.ngrok.io/
+  flag_MD5: 4191d8b8e46ae501a023538ea3177736
+
+intro_to_web_02:
+  title: "Traveler"
+  about: |
+    <h4>Description</h4>
+    <p>Visit our pages to see our awesomeness! Look for the 'flag' file"</p>
+    <p>Flag format: hackpack{...}</p>
+  connect: http://acffbf781dcf.ngrok.io/
+  flag_MD5: 7cda24b0cdbb72da9fb4a2e2ab6d1510
+
+intro_to_web_03:
+  title: "Custom-ui"
+  about: |
+    <h4>Description</h4>
+    <p>How often do you visit the website just to bounce back because of bad design? Now we developed a new feature, which gives you ability to change the design!</p>
+    <p>Flag format: hackpack{...}</p>
+  connect: http://23330bd26910.ngrok.io/
+  flag_MD5: e3be81762372ef91a0f2660d4f75ef01
