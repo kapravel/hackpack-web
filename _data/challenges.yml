@@ -126,3 +126,12 @@ intro_to_re_05:
     the Wine debugger is sufficient for you to side-step the obstacles and get a flag printed out.</p>
   file_path: /challenge_files/intro_to_re/win-exec-1.exe
   flag_MD5: 6a869501b88d73d529490849e9bbbeae # PICOCTF{These are the access codes to the vault: 1063340}
+
+intro_to_web_01:
+  title: "Treasure Hunting"
+  about: |
+    <h4>Description</h4>
+    <p>Hmm, do pirates really think they can hide a treasure without us knowing? Find the treasure and prove they are wrong</p>
+    <p>This is basic web challenges. Only some level of poking is needed. Access the website here: <a href="http://e30f62bed013.ngrok.io/">link</a></p>
+    <p>Flag format: hackpack{...}</p>
+  flag_MD5: 4191d8b8e46ae501a023538ea3177736  # PICOCTF{These are the access codes to the vault: 1063340}
