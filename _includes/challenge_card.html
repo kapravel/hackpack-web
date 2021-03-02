@@ -3,7 +3,7 @@
 
 {% if challenge %}
     <div class="card-header">
-        <strong><code>{{ challenge.title }}</code></strong>
+        <strong><code id="{{ chall_name}}-title">{{ challenge.title }}</code></strong>
     </div>
     <ul class="list-group list-group-flush">
         {% if challenge.about %}
@@ -55,10 +55,10 @@
                     <div class="col-sm-8">
                         <input class="form-control" id="{{ chall_name }}-flag" placeholder="hackpack{...}">
 
-                        <div class="on-challenge-solve valid-feedback">
+                        <div class="valid-feedback">
                             Great job! You are l33t &#128526;
                         </div>
-                        <div class="on-challenge-incorrect invalid-feedback">
+                        <div class="invalid-feedback">
                             Flag is incorrect. Try again!
                         </div>
                     </div>
