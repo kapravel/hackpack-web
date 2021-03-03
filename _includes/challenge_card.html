@@ -1,9 +1,9 @@
 {% assign challenge = site.data.challenges[include.name] %}
-{% assign id = include.name %}
+{% assign chall_name = include.name %}
 
 {% if challenge %}
     <div class="card-header">
-        <strong><code>{{ challenge.title }}</code></strong>
+        <strong><code id="{{ chall_name}}-title">{{ challenge.title }}</code></strong>
     </div>
     <ul class="list-group list-group-flush">
         {% if challenge.about %}
@@ -47,27 +47,29 @@
 
         {% if challenge.flag_MD5 %}
         <li class="list-group-item">
-            <div class="form-group row">
-                <div class="col-sm-2">
+            <form class="challenge" id="{{ chall_name }}">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label for="{{ chall_name }}-flag" class="col-sm-6 col-form-label"><strong>Flag:</strong></label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="{{ chall_name }}-flag" placeholder="hackpack{...}">
+
+                        <div class="valid-feedback">
+                            Great job! You are l33t &#128526;
+                        </div>
+                        <div class="invalid-feedback">
+                            Flag is incorrect. Try again!
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" id="{{ chall_name }}-submit" class="btn btn-primary mb-2">Check</button>
+                    </div>
                     
-                    <label for="{{ id }}-flag" class="col-sm-6 col-form-label"><strong>Flag:</strong></label>
+                    <!-- If you feel like cracking this, be my guest -->
+                    <span hidden=true id="{{ chall_name }}-flag-md5">{{ challenge.flag_MD5 }}</span>
                 </div>
-                <div class="col-sm-8">
-                    <input class="form-control" id="{{ id }}-flag" placeholder="hackpack{...}">
-                    <div class="valid-feedback">
-                        Great job! You are l33t &#128526;
-                    </div>
-                    <div class="invalid-feedback">
-                        Flag is incorrect. Try again!
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <button id="{{ id }}-submit" onclick=checkFlag('{{ id }}') class="btn btn-primary mb-2">Check</button>
-                </div>
-                
-                <!-- If you feel like cracking this, be my guest -->
-                <span hidden=true id="{{ id }}-flag_MD5">{{ challenge.flag_MD5 }}</span>
-            </div>
+            </form>
         </li>
         {% endif %} 
     </ul>
