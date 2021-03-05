@@ -21,6 +21,7 @@ xor_crypto2:
       The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext2.txt
   flag_MD5: 1df5b08797f2e128618117d2983b5cfb # HACKPACK{WHAT_A_KAFKAESQUE_CHALLENGE}
+  flag_format: HACKPACK{...}
 
 xor_crypto3:
   title: XOR Crypto - Medium
@@ -30,6 +31,7 @@ xor_crypto3:
       The cipher text is also in Base64, which you'll need to decode before XORing
   file_path: /challenge_files/xor_crypto/ciphertext3.txt
   flag_MD5: e8ef8ea4ddecbf90e7fd049832db0220 # HACKPACK{MAYBE_NOW_YOULL_READ_THE_TOS_;)}
+  flag_format: HACKPACK{...}
 
 intro_to_re_01:
   title: "picoGym RE, Part I: Need for Speed"
@@ -47,6 +49,7 @@ intro_to_re_01:
     </ul></p>
   file_path: /challenge_files/intro_to_re/need-for-speed
   flag_MD5: 493e3603dc1b1cf9ff71a0ce6c0b03a3 # PICOCTF{Good job keeping bus #24c43740 speeding along!}
+  flag_format: PICOCTF{...}
 
 intro_to_re_02:
   title: "picoGym RE, Part II: Reverse Cipher"
@@ -58,6 +61,7 @@ intro_to_re_02:
     <p>Use Ghidra to understand the cipher algorithm.  Then write a simple program (e.g., in Python) to reverse that algorithm and decipher the flag.</p>
   file_path: /challenge_files/intro_to_re/reverse-cipher.zip
   flag_MD5: 5e7b2f5015770cdb18aa7ee070b6a962 # picoCTF{r3v3rs37ee84d27}
+  flag_format: picoCTF{...}
 
 intro_to_re_03:
   title: "picoGym RE, Part III: Forky"
@@ -81,6 +85,7 @@ intro_to_re_03:
     </ul></p>
   file_path: /challenge_files/intro_to_re/forky
   flag_MD5: 94369eee02c2a4c20f191c7c593d6600 # picoCTF{-721750240}
+  flag_format: picoCTF{INTEGER_YOU_FOUND}
 
 intro_to_re_04:
   title: "picoGym RE, Part IV: Assembly #4"
@@ -109,6 +114,7 @@ intro_to_re_04:
     If not, why not?  What then?</p>
   file_path: /challenge_files/intro_to_re/asm4.S
   flag_MD5: 8eaed559146b3f2a013abadf6eca7b68 # 0x20c
+  flag_format: 0x...
 
 intro_to_re_05:
   title: "picoGym RE, Part V: B1ll_Gat35"
@@ -170,6 +176,7 @@ pico_web_01:
     <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/44573/
   flag_MD5: 8aed0ee08cf62077d46953a07f857d1e
+  flag_format: picoCTF{...}
 
 pico_web_02:
   title: "Irish Name Repo 3"
@@ -179,6 +186,7 @@ pico_web_02:
     <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/29132/
   flag_MD5: 315ef9f9bd694af6b6dbfc9baeb0aea4
+  flag_format: picoCTF{...}
 
 pico_web_03:
   title: "JaWT"
@@ -188,4 +196,5 @@ pico_web_03:
     <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/61864/
   flag_MD5: fb02c3fb225abdc19f66c8836f033693
+  flag_format: picoCTF{...}
   

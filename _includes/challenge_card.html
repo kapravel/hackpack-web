@@ -53,7 +53,13 @@
                         <label for="{{ chall_name }}-flag" class="col-sm-6 col-form-label"><strong>Flag:</strong></label>
                     </div>
                     <div class="col-sm-8">
-                        <input class="form-control" id="{{ chall_name }}-flag" placeholder="hackpack{...}">
+                        <input class="form-control" id="{{ chall_name }}-flag" placeholder=
+                          {% if challenge.flag_format %}
+                            "{{challenge.flag_format}}"
+                          {% else %}
+                            "hackpack{...}"
+                          {% endif %}
+                        >
 
                         <div class="valid-feedback">
                             Great job! You are l33t &#128526;
