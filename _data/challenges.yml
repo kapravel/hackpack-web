@@ -166,8 +166,8 @@ pico_web_01:
   title: "logon"
   about: |
     <h4>Description</h4>
-    <p>This is Juice Shop, OWASP's super vulnerable application! Try and see what you can do with it!<p>
-    <p>Flag format: N/A (built-in scoreboard)</p>
+    <p>Can you log in as admin?<p>
+    <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/44573/
   flag_MD5: 8aed0ee08cf62077d46953a07f857d1e
 
@@ -176,6 +176,7 @@ pico_web_02:
   about: |
     <h4>Description</h4>
     <p>Can you get logged in as the administrator? It's not as simple as it looks...</p>
+    <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/29132/
   flag_MD5: 315ef9f9bd694af6b6dbfc9baeb0aea4
 
@@ -184,5 +185,7 @@ pico_web_03:
   about: |
     <h4>Description</h4>
     <p>Have you heard of JWT?</p>
+    <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/61864/
   flag_MD5: fb02c3fb225abdc19f66c8836f033693
+  
