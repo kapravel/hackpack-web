@@ -3,14 +3,13 @@ layout: learn
 title: Learn
 permalink: /learn/
 current_challs:
-  - intro_to_re_01
-  - intro_to_re_02
-  - intro_to_re_03
-  - intro_to_re_04
-  - intro_to_re_05
   - intro_to_web_01
   - intro_to_web_02
   - intro_to_web_03
+  - juice_shop
+  - pico_web_01
+  - pico_web_02
+  - pico_web_03
 ---
 
 ### Get yourself familiar with CTFs
