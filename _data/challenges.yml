@@ -180,7 +180,7 @@ pico_web_02:
     <p>Flag format: picoCTF{...}</p>
   connect: https://jupiter.challenges.picoctf.org/problem/29132/
   flag_MD5: 315ef9f9bd694af6b6dbfc9baeb0aea4
-
+  
 pico_web_03:
   title: "JaWT"
   about: |
