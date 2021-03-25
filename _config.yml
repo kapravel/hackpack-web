@@ -34,9 +34,9 @@ plugins:
 header_pages:
   - about.md
   - learn.md
+  - ctf2021.md
   - meetings.md
   - internships.md
-  - sponsors.md
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
