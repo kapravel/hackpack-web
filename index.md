@@ -18,7 +18,7 @@ Join our Discord to keep up to date!
 # Spring '21 Meeting Times
 **When:** Fridays at 4:00pm
 
-**Where:** [Online (via Zoom)](https://ncsu.zoom.us/j/95906969070)
+**Where:** We meet online on Discord! You can join our server with the link above ⬆️
 
 
 # Upcoming Meetings and CTFs
