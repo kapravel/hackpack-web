@@ -200,9 +200,9 @@ pico_web_03:
   flag_MD5: fb02c3fb225abdc19f66c8836f033693
   flag_format: picoCTF{...}
   
-  malware_workshop:
-    title: "Not My Password"
-    about: |
-      We have found the following malware on our top secret server. We also intercepted the following file that the malware tried to send out. Can you see what info they tried to steal?
-    file_path: /challenge_files/PackLogger.zip
-    flag_MD5: 093BF970EACA620EF1B9E9E079FC8655 # hackpack{w0W_th3_h43k_i5_stron7}
+malware_workshop:
+  title: "Not My Password"
+  about: |
+    We have found the following malware on our top secret server. We also intercepted the following file that the malware tried to send out. Can you see what info they tried to steal?
+  file_path: /challenge_files/PackLogger.zip
+  flag_MD5: 093BF970EACA620EF1B9E9E079FC8655 # hackpack{w0W_th3_h43k_i5_stron7}
