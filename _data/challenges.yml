@@ -130,7 +130,7 @@ intro_to_re_05:
     <p>But it can be run and even debugged on a Linux system using Wine's <code>winedbg</code> toolchain.
     Given a little persistence and cleverness in Ghidra finding critical points inside the program,
     the Wine debugger is sufficient for you to side-step the obstacles and get a flag printed out.</p>
-  file_path: /challenge_files/intro_to_re/win-exec-1.exe
+  file_path: /challenge_files/intro_to_re/win-exec-1.zip
   flag_MD5: 6a869501b88d73d529490849e9bbbeae # PICOCTF{These are the access codes to the vault: 1063340}
 
 intro_to_web_01:
@@ -200,11 +200,18 @@ pico_web_03:
   flag_MD5: fb02c3fb225abdc19f66c8836f033693
   flag_format: picoCTF{...}
   
-malware_workshop:
+malware_workshop1:
   title: "Not My Password"
   about: |
     <strong><h3>DO NOT RUN OUTSIDE A VIRTUAL MACHINE</h3></strong>
     <h4>This file will record all keystrokes and save them to C:/ProgramData/Log. It will not send any information anywhere else.</h4>
     We have found the following malware on our top secret server. We also intercepted the following file that the malware tried to send out. Can you see what info they tried to steal?
-  file_path: /challenge_files/PackLogger.zip
+  file_path: /challenge_files/malware_workshop/PackLogger.zip
   flag_MD5: 093BF970EACA620EF1B9E9E079FC8655 # hackpack{w0W_th3_h43k_i5_stron7}
+
+malware_workshop2:
+  title: "Is this the real exe or just a fantac++"
+  about: |
+    This executable seems to be loading another executable into memory. Can you solve this? 
+  file_path: /challenge_files/malware_workshop/runner.zip
+  flag_MD5: 69816037a19643dc263788d979a2b44d # hackpack{w0w_70u_4r3_l33t_h4x0r}
