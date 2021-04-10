@@ -215,3 +215,27 @@ malware_workshop2:
     This executable seems to be loading another executable into memory. Can you solve this? 
   file_path: /challenge_files/malware_workshop/runner.zip
   flag_MD5: 69816037a19643dc263788d979a2b44d # hackpack{w0w_70u_4r3_l33t_h4x0r}
+
+snort_rules:
+  title: Writing Snort IDS rules 
+  about: |
+      This challenge is centered around analyzing pcaps from 
+      malware running in a virtual machine and writing rules
+      to detect the malicious traffic via Snort, a network
+      intrusion detection system (IDS). </br>
+      
+      The talk on 4/9/2021
+      will discuss how to use Wireshark to inspect PCAPs and
+      provide an overiew of how to write Snort rules, but the
+      ultimate goal of this challenge is for anyone interested
+      to be able to write a Snort rule that detects real
+      malware and then have the Snort rule added into the 
+      official Snort community ruleset.<br><br>
+      The currently available challenge problems are:<br>
+      <ul><li><a href="https://github.com/recvfrom/contributor/issues/6">Predator the Thief C2 traffic</a></li>
+          <li><a href="https://github.com/recvfrom/contributor/issues/7">PonyStealer Exfil Attempts</a></li>
+          <li><a href="https://github.com/recvfrom/contributor/issues/8">TVRat / TeamSpy C2 Traffic</a></li></ul>
+      <br>
+      To coordinate working on the challenge problems, either post in the GitHub issue or in the Discord. Working 
+      together is allowed, and more problems can be posted if
+      needed.<br>

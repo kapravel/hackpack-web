@@ -3,6 +3,7 @@ layout: learn
 title: Learn
 permalink: /learn/
 current_challs:
+  - snort_rules
   - malware_workshop1
   - malware_workshop2
   - juice_shop
