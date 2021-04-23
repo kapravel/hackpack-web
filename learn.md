@@ -3,6 +3,7 @@ layout: learn
 title: Learn
 permalink: /learn/
 current_challs:
+  - stego_1
   - snort_rules
   - malware_workshop1
   - malware_workshop2
