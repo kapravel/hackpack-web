@@ -243,6 +243,6 @@ snort_rules:
 stego_1:    
   title: Steganography 101
   about: |
-      Enjoy the meme while you warm up a stego skill you'll be using a lot in this challenge set.
-  file_path: /challenge_files/meme.png (attached)
+      Enjoy the meme while you warm up a stego skill you'll be using a lot in this challenge set. (Updated file link)
+  file_path: /challenge_files/stego/meme.png (attached)
   flag_MD5: c06297a0192d965d8ecabd44363751c6
