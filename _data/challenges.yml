@@ -239,8 +239,9 @@ snort_rules:
       To coordinate working on the challenge problems, either post in the GitHub issue or in the Discord. Working 
       together is allowed, and more problems can be posted if
       needed.<br>
-      
-title: Steganography 101
+
+stego_1:    
+  title: Steganography 101
   about: |
       Enjoy the meme while you warm up a stego skill you'll be using a lot in this challenge set.
   file_path: /challenge_files/meme.png (attached)
