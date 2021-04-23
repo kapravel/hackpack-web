@@ -4,6 +4,8 @@ title: Learn
 permalink: /learn/
 current_challs:
   - stego_1
+  - stego_2
+  - stego_3
   - snort_rules
   - malware_workshop1
   - malware_workshop2

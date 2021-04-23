@@ -246,3 +246,17 @@ stego_1:
       Enjoy the meme while you warm up a stego skill you'll be using a lot in this challenge set. (Updated file link)
   file_path: /challenge_files/stego/meme.png
   flag_MD5: c06297a0192d965d8ecabd44363751c6
+  
+stego_2:
+  title: Neat Concept
+  about: |
+      You wouldn't take an unencrypted message at face value, would you?
+  file_path: /challenge_files/stego/unencrypted.txt
+  flag_MD5: 1bc0d11faaa59f084a5b5200208163c7
+  
+stego_3:
+  title: Diffraction
+  about: |
+      Have you ever looked through diffraction lenses? What do they do?
+  file_path: /challenge_files/stego/glasses.jpg
+  flag_MD5: 958ac78aa3250e212bd4eb873862308b

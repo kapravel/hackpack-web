@@ -1,0 +1,9 @@
+Admittedly, that first challenge was a lot more steganography than crypto. Was it fun, though?
+Excited for the next one? Steganography is cool, but there's at least a little bit of normal crypto
+in this one, I promise. Oh, you might want to be familiar with poly-alphabetic ciphers for this.
+My MA 437 class recently learned how to break some classic ciphers, including this one. Ever heard
+of an index of coincidence? It can be used to identify whether a ciphertext is encoded in a mono-
+alphabetic or a poly-alphabetic cipher. Don't overthink this challenge, now, but heed my words.
+Everything can be hidden in plain sight. Anyway, good luck cracking this one!
+
+hpxhg://ufj.fs/ZTsADrT
