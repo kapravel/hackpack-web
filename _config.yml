@@ -34,10 +34,15 @@ plugins:
 header_pages:
   - about.md
   - learn.md
-  - ctf2021.md
+  - challenges.md
   - meetings.md
+  - ctf2021.md
   - internships.md
-  
+
+
+collections:
+  challenges:
+    output: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
