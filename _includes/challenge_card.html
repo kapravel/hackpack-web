@@ -1,19 +1,19 @@
-{% assign challenge = site.data.challenges[include.name] %}
-{% assign chall_name = include.name %}
+{% assign challenge = include.chal %}
+{% assign chall_name = include.chal.name %}
 
 {% if challenge %}
     <div class="card-header">
         <strong><code id="{{ chall_name}}-title">{{ challenge.title }}</code></strong>
     </div>
     <ul class="list-group list-group-flush">
-        {% if challenge.about %}
+        {% if challenge.content | markdownify %}
         <li class="list-group-item">
             <div class="form-group row">
                 <div class="col-sm-2">
                     <strong>About: </strong>
                 </div>
                 <div class="col-sm-10">
-                    {{ challenge.about }}
+                    {{ challenge.content | markdownify }}
                 </div>
             </div>
         </li>
