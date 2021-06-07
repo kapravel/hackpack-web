@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+{% for chal in site.challenges %}
+    <div class="card" style="width: 42rem;">
+        {% include challenge_card.html chal=chal %}
+    </div>
+    <br/>
+{% endfor %}
+
+
+<script src="/assets/js/md5.js"></script>
+<script src="/assets/js/checkFlag.js"></script>
