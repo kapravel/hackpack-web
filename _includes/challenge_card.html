@@ -45,6 +45,28 @@
             </li>
         {% endif %}
 
+        {% if challenge.file_path %}
+             <li class="list-group-item">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <strong>Hints </strong>
+                    </div>
+                    <div class="col-sm-5">
+                        <details>
+                            <summary>Click to expand</summary>
+                            {% if challenge.hints %}
+                                {% for hint in challenge.hints %}
+                                    {{ hint }}
+                                {% endfor %}
+                            {% else %}
+                                No hints :(
+                            {% endif %}
+                        </details> 
+                    </div>
+                </div>
+            </li>           
+        {% endif %}
+
         {% if challenge.flag_MD5 %}
         <li class="list-group-item">
             <form class="challenge" id="{{ chall_name }}">
