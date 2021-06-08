@@ -45,7 +45,7 @@
             </li>
         {% endif %}
 
-        {% if challenge.file_path %}
+        {% if challenge.hints %}
              <li class="list-group-item">
                 <div class="form-group row">
                     <div class="col-sm-2">
@@ -54,13 +54,11 @@
                     <div class="col-sm-5">
                         <details>
                             <summary>Click to expand</summary>
-                            {% if challenge.hints %}
+                                <ul>
                                 {% for hint in challenge.hints %}
-                                    {{ hint }}
+                                <li>{{ hint }}</li>
                                 {% endfor %}
-                            {% else %}
-                                No hints :(
-                            {% endif %}
+                                <ul>
                         </details> 
                     </div>
                 </div>
