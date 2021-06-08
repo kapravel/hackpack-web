@@ -45,6 +45,26 @@
             </li>
         {% endif %}
 
+        {% if challenge.hints %}
+             <li class="list-group-item">
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <strong>Hints </strong>
+                    </div>
+                    <div class="col-sm-5">
+                        <details>
+                            <summary>Click to expand</summary>
+                                <ul>
+                                {% for hint in challenge.hints %}
+                                <li>{{ hint }}</li>
+                                {% endfor %}
+                                <ul>
+                        </details> 
+                    </div>
+                </div>
+            </li>           
+        {% endif %}
+
         {% if challenge.flag_MD5 %}
         <li class="list-group-item">
             <form class="challenge" id="{{ chall_name }}">
