@@ -15,10 +15,12 @@ Join our Discord to keep up to date!
 <iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
-# Spring '21 Meeting Times
+# Fall '21 Meeting Times
 **When:** Fridays at 4:00pm
 
-**Where:** We meet online on Discord! You can join our server with the link above ⬆️
+**Where:** Our first meeting will be online, but we'll be meeting in person the rest of the semester! Room details for next week onwards are forthcoming
+
+You can join our Discord server with the link above ⬆️
 
 
 # Upcoming Meetings and CTFs
