@@ -1,12 +1,32 @@
 ---
 layout: page
 ---
+<br>
+<h3><span class="badge bg-secondary">Trending now!</span></h3>
+<hr>
+<br>
 
 {% for chal in site.challenges %}
+    {% if chal.trending == true %}
     <div class="card" style="width: 42rem;">
         {% include challenge_card.html chal=chal %}
     </div>
     <br/>
+    {% endif %}
+{% endfor %}
+
+<br>
+<h3><span class="badge bg-secondary">Archived but still 1337</span></h3>
+<hr>
+<br>
+
+{% for chal in site.challenges %}
+    {% if chal.trending != true %}
+    <div class="card" style="width: 42rem;">
+        {% include challenge_card.html chal=chal %}
+    </div>
+    <br/>
+    {% endif %}
 {% endfor %}
 
 

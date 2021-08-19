@@ -4,6 +4,7 @@
   file_path: /challenge_files/intro_to_re/forky
   flag_MD5: 94369eee02c2a4c20f191c7c593d6600 # picoCTF{-721750240}
   flag_format: picoCTF{INTEGER_YOU_FOUND}
+  trending: true
 ---
 <h4>Original Description</h4>
 <p>In this program, identify the last integer value that is passed as parameter to the function <code>doNothing()</code>.</p>
