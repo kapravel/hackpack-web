@@ -16,7 +16,7 @@ Join our Discord to keep up to date!
 
 
 # Fall '21 Meeting Times
-**When:** Fridays at 4:00pm
+**When:** Fridays at 5:00pm
 
 **Where:** Our first meeting will be online, but we'll be meeting in person the rest of the semester! Room details for next week onwards are forthcoming
 
