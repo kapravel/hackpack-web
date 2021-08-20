@@ -4,7 +4,7 @@
   file_path: /challenge_files/intro_to_re/need-for-speed
   flag_MD5: 493e3603dc1b1cf9ff71a0ce6c0b03a3 # PICOCTF{Good job keeping bus #24c43740 speeding along!}
   flag_format: PICOCTF{...}
-  trending: true
+  trending: false
 ---
 #### Original Description
 <p>The name of the game is <a href="https://www.youtube.com/watch?v=8piqd2BWeGI">speed</a>.

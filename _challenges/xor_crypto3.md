@@ -1,5 +1,5 @@
 ---
-title: XOR Crypto - Medium
+title: XOR Crypto - Crypto Hard
 name: xor_crupto3
 file_path: /challenge_files/xor_crypto/ciphertext3.txt
 flag_MD5: e8ef8ea4ddecbf90e7fd049832db0220 # HACKPACK{MAYBE_NOW_YOULL_READ_THE_TOS_;)}
