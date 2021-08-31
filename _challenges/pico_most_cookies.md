@@ -5,7 +5,6 @@ connect: http://mercury.picoctf.net:44693/
 file_path: /challenge_files/most_cookies/server.py
 flag_MD5: 9c2ec7db6437a82afcd19db530de2ccc # picoCTF{pwn_4ll_th3_cook1E5}
 flag_format: picoCTF{...}
-trending: true
 ---
 <h4>Description</h4>
 <p>Alright, enough of using my own encryption. Flask session cookies should be plenty secure!<p>
