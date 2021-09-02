@@ -204,6 +204,12 @@ Binary Exploitation (pwn) challenges involve finding and exploiting vulnerabilit
 - Learn about the stack and calling conventions
 - [LiveOverflow's Binary Exploitation Playlist](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN) - This playlist is an incredible resource for learning binary exploitation, and will walk you through nearly all techniques used in entry-mid level pwn challenges
 
+## Practice
+- [OverTheWire - Bandit](https://overthewire.org/wargames/bandit/) - For getting familiar with Linux commands
+- [OverTheWire - Narnia](https://overthewire.org/wargames/narnia/) - For practicing basic binary exploitation
+- [Exploit Eductation - Phoenix](https://exploit.education/phoenix/) - Introduces exploits of increasing difficulty
+- [Pico Gym](https://play.picoctf.org/practice?category=6&page=1) - Archives challenges from past PicoCTF competitions and has great beginner binary exploitation challenges
+
 ## Must-Have Tools
 - [Ghidra](https://ghidra-sre.org/) - for light reverse engineering to find vulnerability
 - [GDB](http://www.unknownroad.com/rtfm/gdbtut/gdbtoc.html) - for tracing how the program handles your input
