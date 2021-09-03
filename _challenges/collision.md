@@ -1,6 +1,5 @@
 ---
-
-title: "collision - Medium Pwn"
+title: "collision - Easy Crypto"
 name: collision
 connect: http://pwnable.kr/play.php 
 trending: true
