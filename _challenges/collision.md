@@ -1,5 +1,5 @@
 ---
-title: Collision - Medium Pwn
+title: "Collision - Medium Pwn"
 name: collision
 connect: http://pwnable.kr/play.php 
 trending: true

@@ -1,5 +1,5 @@
 ---
-title: fd - Easy Pwn
+title: "fd - Easy Pwn"
 name: fd
 connect: http://pwnable.kr/play.php 
 trending: true
