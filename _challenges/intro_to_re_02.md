@@ -4,7 +4,7 @@
   file_path: /challenge_files/intro_to_re/reverse-cipher.zip
   flag_MD5: 5e7b2f5015770cdb18aa7ee070b6a962 # picoCTF{r3v3rs37ee84d27}
   flag_format: picoCTF{...}
-  trending: false
+  trending: true
 ---
   <h4>Original Description</h4>
   <p>We have recovered a binary and a text file. Can you reverse the flag?</p>

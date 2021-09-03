@@ -6,4 +6,5 @@ trending: true
 ---
 
 What's a file descriptor?
+
 (Click on the link and go to the challenge listed.)
