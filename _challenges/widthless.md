@@ -1,5 +1,5 @@
 ---
-  title: "Widthless"
+  title: "CSAW2019/Widthless"
   name: widthless 
   connect: https://0885-152-14-92-89.ngrok.io/ 
   flag_MD5: 179876d3ad1bd45b755113a93bfd1841 
