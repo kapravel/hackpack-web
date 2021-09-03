@@ -4,5 +4,6 @@ title: SSO - CSAW 2018 Web
 connect:
 flag_format: flag{....} 
 flag_MD5: 2bed95b26afe71b88a3768177e3b4a9d # flag{JsonWebTokensaretheeasieststorage-lessdataoptiononthemarket!theyrelyonsupersecureblockchainlevelencryptionfortheirmethods}
+trending: true
 ---
 This is some nice SSO they've built here...
