@@ -211,7 +211,7 @@ Reverse engineering is generally the category with the least amount of people pa
 - [Hex Editor](https://hexed.it/)
   - Useful for editing binaries
 - [**GOOGLE**](https://www.google.com/)
-  - You will most likely know nothing about the challenge. That's one of the main componennts of reverse engineering. **Learn how to google or this category won't be fun for you.**
+  - You will most likely know nothing about the challenge. That's one of the main componennts of reverse engineering. **Google is your friend**
 
 ### More advanced tool classifications and usages
 
