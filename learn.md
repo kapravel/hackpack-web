@@ -2,7 +2,6 @@
 layout: page
 title: Learn
 permalink: /learn/
-toc: true
 ---
 
 # Getting Started
@@ -54,7 +53,7 @@ Z3 is a constratins solver, which can be useful for a variety of challenges. Ess
 [q = True, p = False, r = False]
 ```
 
-## Linux Machine
+## Linux Virtual Machine
 > Stolen shamelessly from  https://www.kapravelos.com/teaching/csc405-s21/readings/linux-setup/ 
 
 >*posted by Alex Nahapetyan*
@@ -100,7 +99,15 @@ There are a few options for Linux Distros. Kali and Parrot both come pre-equipte
 <a href="https://github.com/pwndbg/pwndbg">pwngdb</a> an awesome gdb plugin for reverse engineering (super helpful later on) is installed on this VM but disabled by default. To enable remove the `"` at the beginning of the _~/.gdbinit_.
 
 
-## The Virtual Machine is really slow/laggy; any other options? (Personal recommendation!)
+## _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier?_
+
+Yup! Check out Windows Subsystem for Linux (WSL). It's a great way to get the Linux CLI experience without having to deal with VMWare/Virtualbox. You also get to choose from a wide range of linux distros:
+
+Setup docs: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+[Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) in addition to being very pretty lets you juggle different distros + cmd/powershell . 
+
+## _The Virtual Machine is really slow/laggy; any other options? (Personal recommendation!)_
 
 We are going to use <a href="https://www.vagrantup.com/"> Vagrant </a> to configure a Linux server to run-on <a href="https://www.virtualbox.org/" >Virtualbox</a>.
 
@@ -244,7 +251,7 @@ Reverse engineering is generally the category with the least amount of people pa
   - Used for extracting compiled python from executables and binaries made with pyinstaller
 
 
-### If you're interested in the Game GuidedHacking is an amazing forum with a lot of information about game hacking.
+### If you're interested in game hacking,  Game GuidedHacking is an amazing forum with a lot of information about game hacking.
 - Always remember to only hack things you have permission to hack/ try to stay on single player games to stay safe.
 - Following their tutorials and hacking various games you get exposure to multiple architectures, learn reverse engineering tricks, and you will learn about how to get around anti debug code.
 
