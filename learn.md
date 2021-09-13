@@ -118,7 +118,6 @@ Setup docs: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https:/
 
 ## _The Virtual Machine is really slow/laggy; any other options? (Alex reccomends this)_
 
-### NOTE: Currently there are issues with this setup. One of the vagrant images is no longer hosted. We will update these instructions shortly 
 
 We are going to use <a href="https://www.vagrantup.com/"> Vagrant </a> to configure a Linux server to run-on <a href="https://www.virtualbox.org/" >Virtualbox</a>.
 
@@ -128,7 +127,84 @@ This one will be the easiest to use once you set it up!
 
 1. Download and install <a href="https://www.virtualbox.org/" > Virtualbox </a>.
 2. Install and verify installation for vagrant by following <a href="https://learn.hashicorp.com/tutorials/vagrant/getting-started-install?in=vagrant/getting-started">this guide</a>.
-3. Download <a href="https://drive.google.com/file/d/1OG8pqip5zRKR_E1EjOkiIf2dMD8kekAZ/view?usp=sharing">this</a> vagrant file
+3. Save the following as `Vagrantfile`
+```ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://vagrantcloud.com/search.
+  config.vm.box = "ubuntu/impish64"
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # NOTE: This will enable public access to the opened port
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine and only allow access
+  # via 127.0.0.1 to disable public access
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network "private_network", ip: "7.7.7.7"
+
+  # Create a public network, which generally matched to bridged network.
+  # Bridged networks make the machine appear as another physical device on
+  # your network.
+  # config.vm.network "public_network"
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  config.vm.synced_folder "./", "/Data" # if you want another folder to be shared, just edit ./ to point there
+
+  # Provider-specific configuration so you can fine-tune various
+  # backing providers for Vagrant. These expose provider-specific options.
+  # Example for VirtualBox:
+  #
+  # config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+  #   vb.memory = "1024"
+  # end
+  #
+  # View the documentation for the provider you are using for more
+  # information on available options.
+
+  # Enable provisioning with a shell script. Additional provisioners such as
+  # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
+  # documentation for more information about their specific syntax and use.
+  config.vm.provision "shell", inline: <<-SHELL
+    dpkg --add-architecture i386
+    apt-get update
+    apt-get install -y unicorn fish build-essential jq strace ltrace curl wget rubygems gcc dnsutils netcat gcc-multilib net-tools vim gdb gdb-multiarch python3 python3-pip python3-dev libssl-dev libffi-dev wget git make procps libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386
+    pip3 install keystone-engine unicorn capstone ropper
+    git clone https://github.com/radare/radare2 && cd radare2 && sys/install.sh
+    cd .. && git clone https://github.com/pwndbg/pwndbg && cd pwndbg && git checkout dev && ./setup.sh
+    python3 -m pip install --upgrade pwntools
+  SHELL
+end
+```
 4. Put that file in the same folder you want to be shared with your VM.
 5. Open up a command prompt (terminal or cmd), `cd` to that folder, and type `vagrant up`.
 6. Type `vagrant ssh` to ssh into the Linux box, and there you go! Now you have a working Linux VM you are SSHed in. The shared folder is in `/data`
