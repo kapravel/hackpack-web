@@ -12,7 +12,16 @@ permalink: /learn/
 
 ## What tools do I need?
 
-Tools can vary widly from depending on the type. However, for most challenges, this is what we recommend:
+Tools can vary widly from depending on the type. However, for most challenges, you will need:
+
+- A way to run Python
+- A text editor of your choice ([VSCode](https://code.visualstudio.com/) is a fan favorite)
+- A way to run Linux in some capacity
+
+**Q**: _Can I use Git Bash instead of installing Linux_
+
+**A**: When you're using Git Bash, you're not _really_ running Linux. For some things, it doesn't really matter. However, if you work on binary challenges, Git Bash will not be sufficient
+
 
 ## [Python](https://www.python.org/)
 
@@ -99,15 +108,17 @@ There are a few options for Linux Distros. Kali and Parrot both come pre-equipte
 <a href="https://github.com/pwndbg/pwndbg">pwngdb</a> an awesome gdb plugin for reverse engineering (super helpful later on) is installed on this VM but disabled by default. To enable remove the `"` at the beginning of the _~/.gdbinit_.
 
 
-## _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier?_
+## _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier? (Dom reccomends this)_
 
 Yup! Check out Windows Subsystem for Linux (WSL). It's a great way to get the Linux CLI experience without having to deal with VMWare/Virtualbox. You also get to choose from a wide range of linux distros:
 
-Setup docs: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+Setup docs: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) in addition to being very pretty lets you juggle different distros + cmd/powershell . 
 
-## _The Virtual Machine is really slow/laggy; any other options? (Personal recommendation!)_
+## _The Virtual Machine is really slow/laggy; any other options? (Alex reccomends this)_
+
+### NOTE: Currently there are issues with this setup. One of the vagrant images is no longer hosted. We will update these instructions shortly 
 
 We are going to use <a href="https://www.vagrantup.com/"> Vagrant </a> to configure a Linux server to run-on <a href="https://www.virtualbox.org/" >Virtualbox</a>.
 
@@ -164,7 +175,7 @@ Connection: close
 
 This is the request the browser is trying to make. Hit the `Forward` button or turn the Intercept off and the browser will continue as normal.
 
-This functionality allows you to bypass interacting with the UI of a website and send data directly to the server. For example, if you were testing a login page that doesn't allow certain characters. Using Burp you could make a dummy request, intercept it, and add the illegal characters to the request
+This functionality allows you to bypass interacting with the UI of a website and send data directly to the server. For example, say you're testing a login page that doesn't allow certain characters. Using Burp you could make a dummy request, intercept it, and add the illegal characters to send to the server
 
 ```http
 POST /login HTTP/1.1
@@ -189,15 +200,15 @@ For more information about using Burp, [check out PortSwigger's tutorial](https:
 
 # 🔬 Reverse Engineering (rev)
 
-Reverse Engineering (Rev) challenges are generally logic puzzles (reversing crypto alto’s without the math), game hacking, crack me programs, flag checkers, homemade languages, and reversing obscure architectures. 
+Reverse Engineering (Rev) challenges are generally logic puzzles (reversing crypto algo’s without the math), game hacking, crack me programs, flag checkers, homemade languages, and reversing obscure architectures. 
 
-Reverse engineering is generally the category with the least amount of people participating in it, this is partly due to difficulty and partly due to most people who are good at reverse engineering going to pwn. 
+Reverse engineering generally has the least amount of people participating in it. This is partly due to difficulty and partly due to most people who are good at reverse engineering working on Binary Exploitation (pwn) instead. 
 
 ## How to Learn:
 
 ### Practice, Practice, Practice. 
-- Reverse engineering is extremely time consuming, especially when you start, but as you practice you will start recognizing pattern and get faster each time.
-- Almost all good Reverse engineering challenges will be unique and will require that you will need to learn about something new, this skill improves as you practice.
+- Reverse engineering is extremely time consuming, especially when you start. As you practice you will start recognizing patterns and get faster with time.
+- Almost all good reverse engineering challenges will be unique and will require that you will need to learn about something new; this skill improves as you practice.
 - You can practice lots of challenges [here](https://github.com/Kasimir123/CTFWriteUps). All the challenges are rated for difficulty and each challenge has the original files and a writeup.
 
 ## Tools:
@@ -205,9 +216,9 @@ Reverse engineering is generally the category with the least amount of people pa
 ### Required Tools to start for free today
 
 - [Ghidra](https://ghidra-sre.org/)
-  - Use this to decompile binaries and executables
+  - Suite of reverse engineering tools, including dissasembly. Use this to decompile binaries and executables
 - [GDB](gnu.org/software/gdb/)
-  - Useful for dynamic analysis
+  - Gnu Project Debugger. Useful for dynamic analysis
 - [Hex Editor](https://hexed.it/)
   - Useful for editing binaries
 - [**GOOGLE**](https://www.google.com/)
@@ -215,17 +226,16 @@ Reverse engineering is generally the category with the least amount of people pa
 
 ### More advanced tool classifications and usages
 
-#### Static Analysis Tool
-- Ghidra
+#### Other Static Analysis Tools
 - Radare2
 - Binary Ninja
 - Ida
-#### Dynamic Analysis Tool
-- GDB
+#### Dynamic Analysis Tools
 - Binary Ninja
 - Ida
 #### Advanced Automatic solving tools
 - [Angr](https://angr.io/)
+  - Python framwork for analyzing binaries
   - Does everything you will try to do but better
   - Make a virtual environment in python or you will break your python
 #### Must have python libraries
@@ -257,7 +267,12 @@ Reverse engineering is generally the category with the least amount of people pa
 
 # 💀 Binary Exploitation (Pwn)
 
-Binary Exploitation (pwn) challenges involve finding and exploiting vulnerabilities in executable programs, typically to gain a remote shell. Pwn challenges tend to have a higher learning curve than the other categories. A familiar understanding of Linux, C, assembly, are recommended before doing pwn challenges.
+Binary Exploitation (pwn) challenges involve finding and exploiting vulnerabilities in a program, typically to gain a remote shell. Pwn challenges tend to have a higher learning curve than the other categories. A familiar understanding of Linux, C, assembly, are recommended before doing pwn challenges.
+
+The _classic_ pwn challenge is the Stash Smash attack, originally outlined in [this classic forum post](http://phrack.org/issues/49/14.html)
+
+Liveoverlow also has a great video about stack smash attacks here:
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Y-4WHf0of6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Learning Resources
 - Learn Assembly and C
@@ -300,3 +315,13 @@ The best way to hone your cryptography skills is through practice! Try your luck
 ## What tools do I need to be successful?
 
 Pen, paper, and Python is really all you need, although some experience with [Sage](https://doc.sagemath.org/html/en/tutorial/introduction.html) (a more math-focused extension of Python) might prove useful. Usually all attacks and exploits can be written from scratch well within the duration of the CTF. No external tools are required, although the use of existing third-party scripts is generally allowed.
+
+# I have all my tools setup. What now?
+
+[Go checkout our Challenges page!](https://hackpack.club/challenges)
+
+If you're looking for some introductory challenges to test your mettle, checkout [PicoGym](https://play.picoctf.org/)!
+
+If you have any other questions, reach out to us on Discord. We'll be happy to give you a hand 
+
+### Happy Hacking!
