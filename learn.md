@@ -128,7 +128,8 @@ This one will be the easiest to use once you set it up!
 1. Download and install <a href="https://www.virtualbox.org/" > Virtualbox </a>.
 2. Install and verify installation for vagrant by following <a href="https://learn.hashicorp.com/tutorials/vagrant/getting-started-install?in=vagrant/getting-started">this guide</a>.
 3. Save the following as `Vagrantfile`
-```ruby
+
+```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
