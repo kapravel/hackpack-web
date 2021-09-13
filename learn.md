@@ -271,8 +271,8 @@ Binary Exploitation (pwn) challenges involve finding and exploiting vulnerabilit
 
 The _classic_ pwn challenge is the Stash Smash attack, originally outlined in [this classic forum post](http://phrack.org/issues/49/14.html)
 
-Liveoverlow also has a great video about stack smash attacks here:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-4WHf0of6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Computerphile has a great video about stack smash attacks here:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1S0aBV-Waeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Learning Resources
 - Learn Assembly and C
