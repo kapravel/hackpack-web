@@ -230,30 +230,41 @@ Reverse engineering generally has the least amount of people participating in it
 - Radare2
 - Binary Ninja
 - Ida
+
 #### Dynamic Analysis Tools
 - Binary Ninja
 - Ida
+
+
 #### Advanced Automatic solving tools
 - [Angr](https://angr.io/)
   - Python framwork for analyzing binaries
   - Does everything you will try to do but better
   - Make a virtual environment in python or you will break your python
+
+
 #### Must have python libraries
 - [Pwntools](https://pypi.org/project/pwntools/)
   - Gives better access to the binaries when running scripts
 - [Z3py Solver](https://pypi.org/project/z3-solver/)
   - Used to check satisfiability of equations
   - Useful for flag checker challenges
+
+
 #### C# specific challenges
 - [dnSpy](https://github.com/dnSpy/dnSpy)
   - Decompiles C#
   - Lets you edit the C# and when you save it will recompile for you
+
+
 #### APK specific challenges
 - [MobSF](https://mobsf.github.io/docs/#/)
   - All in one APK tool 
   - Extracts all APK data
   - Decompiles all java
   - Sets up emulation for dynamic analysis
+
+
 #### Compiled python challenges
 - [Uncompyle](https://pypi.org/project/uncompyle6/)
     - Decompiles compiled python bytecode
@@ -261,15 +272,16 @@ Reverse engineering generally has the least amount of people participating in it
   - Used for extracting compiled python from executables and binaries made with pyinstaller
 
 
-### If you're interested in game hacking,  Game GuidedHacking is an amazing forum with a lot of information about game hacking.
-- Always remember to only hack things you have permission to hack/ try to stay on single player games to stay safe.
-- Following their tutorials and hacking various games you get exposure to multiple architectures, learn reverse engineering tricks, and you will learn about how to get around anti debug code.
+### If you're interested in game hacking, Game GuidedHacking is an amazing forum with a lot of information.
+- Following their tutorials and hacking various games you get exposure to multiple architectures,  learn reverse engineering tricks, and learn about how to get around anti-debug code.
+- Always remember to only hack things you have permission to hack. Sticking to offline, single player games is a good way to stay safe.
+
 
 # 💀 Binary Exploitation (Pwn)
 
 Binary Exploitation (pwn) challenges involve finding and exploiting vulnerabilities in a program, typically to gain a remote shell. Pwn challenges tend to have a higher learning curve than the other categories. A familiar understanding of Linux, C, assembly, are recommended before doing pwn challenges.
 
-The _classic_ pwn challenge is the Stash Smash attack, originally outlined in [this classic forum post](http://phrack.org/issues/49/14.html)
+The _classic_ pwn challenge is the Stash Smash attack, originally outlined in [this forum post](http://phrack.org/issues/49/14.html)
 
 Computerphile has a great video about stack smash attacks here:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1S0aBV-Waeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
