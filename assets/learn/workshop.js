@@ -4,13 +4,12 @@ function triggerState() {
   sidebarState = sidebarState == 0 ? 255 : 0;
 }
 $(function() {
-  sidebarState = 250; 
+  sidebarState = 0; 
   page = 1;
   end = pages.length;
-  $('#page-1').addClass('carousel-item');
-  $('#page-1').addClass('active');
+  $('#page-1').addClass('carousel-item active rounded border border-danger');
   for (let i = 2; i <= end; i++){
-    $('#page-' + i).addClass('carousel-item');
+    $('#page-' + i).addClass('carousel-item rounded border border-danger');
   }
   // Done with setup, display
   $("#loading").remove();

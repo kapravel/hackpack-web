@@ -6,8 +6,9 @@
   permalink: /learn/crypto-101
   layout: workshop
   pages: 
-    - Instroduction
-    - Learn More
+    - What is Crypto?
+    - What do I need to know?
+    - What tools do I need?
 ---
 
 <section id="page-1" markdown="1">
@@ -34,7 +35,8 @@ What about cryptographic knowledge? There are many exotic cryptosystems and even
 - [ECC](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/), based on elliptic curve arithmetic with its commonly used signature scheme [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm).
 
 The best way to hone your cryptography skills is through practice! Try your luck in beginner-focused CTFs, look for archived challenges on [CTFtime](https://ctftime.org), or check out [CryptoHack](https://cryptohack.org).
-
+</section>
+<section id="page-3" markdown="1">
 ## What tools do I need to be successful?
 
 Pen, paper, and Python is really all you need, although some experience with [Sage](https://doc.sagemath.org/html/en/tutorial/introduction.html) (a more math-focused extension of Python) might prove useful. Usually all attacks and exploits can be written from scratch well within the duration of the CTF. No external tools are required, although the use of existing third-party scripts is generally allowed.

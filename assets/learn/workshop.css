@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 255; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place  */
   z-index: 1;  /* Stay on top  */
   top: 0;
@@ -10,6 +10,9 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+#main{
+  margin-left: 255;
 }
 
 /* The sidebar links */
@@ -20,6 +23,16 @@
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+button{
+  margin: 20px;
+}
+
+section {
+  background-color:  #f5f5f5;
+  padding:  2%;
+
 }
 
 /* When you mouse over the navigation links, change their color */
