@@ -30,7 +30,7 @@ markdown: kramdown
 #theme: minima
 plugins:
   - jekyll-feed
-
+  
 header_pages:
   - about.md
   - learn.md
@@ -42,6 +42,8 @@ header_pages:
 
 collections:
   challenges:
+    output: true
+  learn:
     output: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

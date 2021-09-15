@@ -1,6 +1,55 @@
----
-layout: page
----
+{%- include head.html -%}
+<body>{%- include header.html -%}
 
-<h2>Learning Material</h2>
-{{ content }}
+
+
+<div class="container-fluid" style="padding: 3% 5% 5% 5%">
+    <div class="row">
+{% for workshop in site.learn %}
+    
+
+        <div class="col-lg-3 mb-3 d-flex align-items-stretch" style="padding-bottom: 3%;">
+        <div class="card border mb-4">
+            {% if workshop.image%}
+            <img
+            src="{{workshop.image}}"
+            class="card-img-top"
+            alt="..."
+            {%else%}
+            <img
+            src="/assets/banner.jpg"
+            class="card-img-top"
+            alt="..."
+            {%endif%}
+        />
+            <div class="card-body">
+            <h5 class="card-title">{{ workshop.title}} </h5>
+            <p class="card-text">
+                {{workshop.description}}
+            </p>
+            <a href="{{workshop.permalink}}"><input class="btn btn-primary btn-lg float-end" type="button" value="Learn More"></a>
+            </div>
+            
+        </div>
+        
+    </div>
+{% endfor %}
+</div>
+</div>
+  {%- include footer.html -%}
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</body>
