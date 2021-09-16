@@ -1,12 +1,10 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+    <h2 class="d-flex footer-heading justify-content-center">{{ site.title | escape }}</h2>
+<div class="d-flex row flex-row justify-content-center">
+      <div class="p-4 col d-flex justify-content-center">
         <ul class="contact-list">
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -14,15 +12,13 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class="p-4 col  d-flex justify-content-center">
+        <a href="https://twitter.com/HackPackCTF?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @HackPackCTF</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="p-4 col  d-flex justify-content-center">
         <p>{{- site.description | escape -}}</p>
-      </div>
     </div>
-
-  </div>
+</div>
 
 </footer>
