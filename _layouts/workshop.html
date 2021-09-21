@@ -3,12 +3,6 @@
 
 <body>
   {%- include header.html -%}
-  <script>
-    pages = []
-    {% for p in page.pages %}
-      pages.push("{{ p }}");
-    {% endfor %}
-  </script>
 <div class="d-flex justify-content-center" id="loading">
   <div class="spinner-border" role="status">
     <span class="sr-only">Loading...</span>
@@ -18,22 +12,12 @@
   <div class="container-fluid .hidden-xs" id="cont" hidden>
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="triggerState()">&times;</a>
-    {% for p in page.pages %}
-      <a href="#" onclick="goTo('{{p}}')"> {{p}}</a>
-    {% endfor %}
       </div>
         <button class="openbtn" onclick="triggerState()">&#9776; ToC</button>
       <div id="main" class="d-flex flex-row justify-content-center">
-<!--         <button type="button" data-bs-target="#myCarousel" data-bs-slide="prev" class="btn btn-danger btn-lg"><i class="bi bi-skip-backward"></i></button>
-        </button> -->
-      <div class="col-8">
-
-        <div id="myCarousel"  class="carousel slide" data-bs-interval="false" style="padding-top: 4%">
+      <div class="col-6">
          {{content}}
         </div>
-        </div>
-          <!-- <button type="button" class="btn btn-danger btn-lg" data-bs-target="#myCarousel" data-bs-slide="next" ><i class="bi bi-skip-forward"></i></button> -->
-        <!-- </button> -->
       </div>
     </div>
 

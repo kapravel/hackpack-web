@@ -3,6 +3,8 @@
   tags: new
   description: Need help getting started with your setup, look no further!
   image: "/assets/learn/getting_started.jpg"
+  permalink: /learn/getting_started
+  layout: workshop
 ---
 ## What is a CTF?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8ev9ZX9J45A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,7 +23,7 @@ Tools can vary widly from depending on the type. However, for most challenges, y
 **A**: When you're using Git Bash, you're not _really_ running Linux. For some things, it doesn't really matter. However, if you work on binary challenges, Git Bash will not be sufficient
 
 
-## [Python](https://www.python.org/)
+### [Python](https://www.python.org/)
 
 Python is convient for programmatically solving challenges or automating the boring stuff. It's recommended to get familiar with the fundamentals of the language.
 
