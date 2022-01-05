@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sponsors
-permalink: /sponsors/
+title: HackPack CTF Sponsors 2021
+permalink: /sponsors21/
 ---
 <style>
 .picture {
@@ -13,7 +13,7 @@ permalink: /sponsors/
 }
 </style>
 
-### HackPack CTF'20 is sponsored by the following NCSU ePartners:
+### HackPack CTF'21 is sponsored by the following NCSU ePartners:
 
 ![]({{"/../assets/bbt_truist.jpg"}}){:class="picture"}
 
