@@ -15,10 +15,10 @@ Join our Discord to keep up to date!
 <iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
-# Fall '21 Meeting Times
-**When:** Fridays at 5:00pm
+# Spring 2022 Meeting Times
+**When:** Fridays at 4:00pm
 
-**Where:** EB3 Room 2236 
+**Where:** Discord (for the time being)
 
 You can join our Discord server with the link above ⬆️
 
