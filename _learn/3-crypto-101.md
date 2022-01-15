@@ -1,5 +1,5 @@
 ---
-  name: "Basics: Crypto"
+  name: "Crypto 101"
   tags: new
   description: Get familiar with the tools and techniques needed to solve basic crypto challenges
   image: "/assets/learn/crypto-101.jpg"
