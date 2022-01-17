@@ -1,0 +1,28 @@
+<html>
+{%- include head.html -%}
+
+<body>
+  {%- include header.html -%}
+<div class="d-flex justify-content-center" id="loading">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+</div>
+  <div class="container-fluid .hidden-xs" id="cont" hidden>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="triggerState()">&times;</a>
+      </div>
+        <button class="openbtn" onclick="triggerState()">&#9776; ToC</button>
+      <div id="main" class="d-flex flex-row justify-content-center">
+      <div class="col-6">
+         {{content}}
+        </div>
+      </div>
+    </div>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="/assets/learn/workshop.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/learn/workshop.css">
+</body>
+</html>
