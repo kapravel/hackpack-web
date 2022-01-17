@@ -23,61 +23,21 @@ Tools can vary widly from depending on the type. However, for most challenges, y
 **A**: When you're using Git Bash, you're not _really_ running Linux. For some things, it doesn't really matter. However, if you work on binary challenges, Git Bash will not be sufficient
 
 
-### [Python](https://www.python.org/)
-
-Python is convient for programmatically solving challenges or automating the boring stuff. It's recommended to get familiar with the fundamentals of the language.
-
-As with everything here, the best way to learn is to practice.
-
-If you're already familiar with python, here are some useful libraries we recommend:
-
-### [pwntools](https://docs.pwntools.com/en/latest/)
-Pwntools automates a lot of boilerplate code one would need for binary exploitation challenges:
-
-```python
->>> from pwn import *
->>> conn = remote('ftp.ubuntu.com',21)
->>> conn.recvline()
-b'Please dont pwn me'
->>> conn.send(malicious_payload)
->>> conn.interactive()
-b'eeek, ive been hacked'
-$ echo 'gotcha' # <--- interactive shell!
-```
-
-### [Z3Py](https://pypi.org/project/z3-solver/)
-
-Z3 is a constratins solver, which can be useful for a variety of challenges. Essentially, you give Z3 a list of constraints and it will spit out a solution:
-
-```python
->>> x = Int('x')
->>> y = Int('y')
->>> solve(x > 2, y < 10, x + 2*y == 7)
-[y = 0, x = 7]
-
->>> p = Bool('p')
->>> q = Bool('q')
->>> r = Bool('r')
->>> solve(Implies(p, q), r == Not(q), Or(Not(p), r))
-[q = True, p = False, r = False]
-```
 
 ## Linux Virtual Machine
-> Stolen shamelessly from  https://www.kapravelos.com/teaching/csc405-s21/readings/linux-setup/ 
 
->*posted by Alex Nahapetyan*
 
 There have been a few questions about what environment to use for assembling code/future 1337 things this semester! So in this post, I will try to cover all grounds based on what you have available to you. (Last option is my personal recommendation)
 
 ![XKCD comic 456](https://imgs.xkcd.com/comics/cautionary.png)
 
-__Note: You do NOT need to have this setup! You can install popOS on an old laptop or build Gentoo Linux from the source. You should choose a setup for this semester (especially for the CTF) you are comfortable with, and your computer can support it! (and a setup that can get the job done)__
+__Note: You do NOT need to have this setup! You can install popOS on an old laptop or build Gentoo Linux from the source. You should choose a setup for CTFs/classes you are comfortable with, and your computer can support it! (and a setup that can get the job done)__
 
-## _I have a toaster, can't run anything past chrome?_
+### _I have a toaster, can't run anything past chrome?_
 
 I would go with VLC! All you need to do is reserve an Ubuntu VM (`Ubuntu 18.04` image) and run these commands.
 ```
-sudo dpkg --add-architecture i386 # Add MultiArch support
+sudo dpkg --add-architecture i386 # Add MultiArch support, you won't need it for 405 but you might need it for  other CTFs
 sudo apt update # update everything
 sudo apt install -y gcc gcc-multilib gdb nasm vim # install gcc and nasm to compile code, gdb because it will come in handy later hint-hint, and vim if you want to edit code using it
 ```
@@ -88,7 +48,7 @@ And you can look at this <a href="https://marketplace.visualstudio.com/items?ite
 
 Based on past posts, you can see that you won't be able to use the EOS system, but feel free to use the AFS lockers to back up your work (`/afs/unity.ncsu.edu/users/<first letter from UnityID>/<UnityID>`).
 
-## _I have a decent computer with at least 6GB of ram and 4 cores_
+### _I have a decent computer with at least 6GB of ram and 4 cores_
 
 You have the same option as above, but you can set up your own VM to test things on. Perks include the fact that you can drag and drop things, you can interact with the GUI, and no need to make sure all your stuff is backed up.
 
@@ -99,16 +59,14 @@ You can get Vmware Workstation (Fusion if you are on a mac) [from here](https://
 There are a few options for Linux Distros. Kali and Parrot both come pre-equipted with some security tools out of the gate, but it's up to you what you want to use. Most distros provide OVA files that you can plug in directly into Virtualbox/VMWare
 
 - [Kali](https://www.kali.org/get-kali/#kali-virtual-machines)
-- [Parrot](https://www.parrotsec.org/)
+- [Parrot](https://www.parrotsec.org/virtual/)
 - [Ubuntu](https://ubuntu.com/)
 
 <a href="https://help.okta.com/en/prod/Content/Topics/Access-Gateway/deploy-vmwareworkstation.htm"> How to import an OVA file VMware</a>
 
 
-<a href="https://github.com/pwndbg/pwndbg">pwngdb</a> an awesome gdb plugin for reverse engineering (super helpful later on) is installed on this VM but disabled by default. To enable remove the `"` at the beginning of the _~/.gdbinit_.
 
-
-## _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier? (Dom reccomends this)_
+### _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier? (Dom reccomends this)_
 
 Yup! Check out Windows Subsystem for Linux (WSL). It's a great way to get the Linux CLI experience without having to deal with VMWare/Virtualbox. You also get to choose from a wide range of linux distros:
 
@@ -116,7 +74,7 @@ Setup docs: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https:/
 
 [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) in addition to being very pretty lets you juggle different distros + cmd/powershell . 
 
-## _The Virtual Machine is really slow/laggy; any other options? (Alex reccomends this)_
+### _The Virtual Machine is really slow/laggy; any other options? (Alex reccomends this)_
 
 
 We are going to use <a href="https://www.vagrantup.com/"> Vagrant </a> to configure a Linux server to run-on <a href="https://www.virtualbox.org/" >Virtualbox</a>.
@@ -213,3 +171,42 @@ end
 Any time you need a Linux shell, you can just `cd` to that folder and then type `vagrant ssh`.
 
 <a href="https://github.com/pwndbg/pwndbg">pwngdb</a> an awesome gdb plugin for reverse engineering (super helpful later on) is installed on this VM if you would like to disable it, add a `"` at the beginning of the _~/.gdbinit_.
+
+## [Python](https://www.python.org/)
+
+Python is convient for programmatically solving challenges or automating the boring stuff. It's recommended to get familiar with the fundamentals of the language.
+
+As with everything here, the best way to learn is to practice.
+
+If you're already familiar with python, here are some useful libraries we recommend:
+
+## [pwntools](https://docs.pwntools.com/en/latest/)
+Pwntools automates a lot of boilerplate code one would need for binary exploitation challenges:
+
+```python
+>>> from pwn import *
+>>> conn = remote('ftp.ubuntu.com',21)
+>>> conn.recvline()
+b'Please dont pwn me'
+>>> conn.send(malicious_payload)
+>>> conn.interactive()
+b'eeek, ive been hacked'
+$ echo 'gotcha' # <--- interactive shell!
+```
+
+## [Z3Py](https://pypi.org/project/z3-solver/)
+
+Z3 is a constratins solver, which can be useful for a variety of challenges. Essentially, you give Z3 a list of constraints and it will spit out a solution:
+
+```python
+>>> x = Int('x')
+>>> y = Int('y')
+>>> solve(x > 2, y < 10, x + 2*y == 7)
+[y = 0, x = 7]
+
+>>> p = Bool('p')
+>>> q = Bool('q')
+>>> r = Bool('r')
+>>> solve(Implies(p, q), r == Not(q), Or(Not(p), r))
+[q = True, p = False, r = False]
+```
