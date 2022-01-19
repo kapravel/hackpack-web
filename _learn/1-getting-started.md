@@ -170,6 +170,8 @@ end
 
 Any time you need a Linux shell, you can just `cd` to that folder and then type `vagrant ssh`.
 
+When you are finished using vagrant use `exit` to exit the ssh connection and then run `vagrant halt`. If you are running into problems with your vagrant instance or you have updated the VagrantFile you will want to restart your instance by running the halt and then the up command.
+
 <a href="https://github.com/pwndbg/pwndbg">pwngdb</a> an awesome gdb plugin for reverse engineering (super helpful later on) is installed on this VM if you would like to disable it, add a `"` at the beginning of the _~/.gdbinit_.
 
 ## [Python](https://www.python.org/)
