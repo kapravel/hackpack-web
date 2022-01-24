@@ -52,7 +52,7 @@ Based on past posts, you can see that you won't be able to use the EOS system, b
 
 You have the same option as above, but you can set up your own VM to test things on. Perks include the fact that you can drag and drop things, you can interact with the GUI, and no need to make sure all your stuff is backed up.
 
-You can get Vmware Workstation (Fusion if you are on a mac) [from here](https://www.csc.ncsu.edu/vmap/)
+
 
 [VirtualBox](https://www.virtualbox.org/) is a free alternative if you're an NCSU student: 
 
