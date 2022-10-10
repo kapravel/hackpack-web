@@ -9,7 +9,7 @@ If you like CTFs and you are interested in getting some research experience in c
 
 ## How to apply
 
-Please use [this form](https://forms.gle/39hQj2HjM34hrAKaA) to apply for 2022 internships.
+Please use [this form](https://forms.gle/39hQj2HjM34hrAKaA) to apply for internships.
 
 {% comment %}
 If you are interested to apply, send an email to Alex Kapravelos ([akaprav@ncsu.edu](mailto:akaprav@ncsu.edu)) to introduce yourself and provide the following information:
