@@ -59,7 +59,7 @@ You have the same option as above, but you can set up your own VM to test things
 There are a few options for Linux Distros. Kali and Parrot both come pre-equipted with some security tools out of the gate, but it's up to you what you want to use. Most distros provide OVA files that you can plug in directly into Virtualbox/VMWare
 
 - [Kali](https://www.kali.org/get-kali/#kali-virtual-machines)
-- [Parrot](https://www.parrotsec.org/virtual/)
+- [Parrot](https://www.parrotsec.org/download)
 - [Ubuntu](https://ubuntu.com/)
 
 <a href="https://help.okta.com/en/prod/Content/Topics/Access-Gateway/deploy-vmwareworkstation.htm"> How to import an OVA file VMware</a>
