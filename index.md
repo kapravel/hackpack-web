@@ -11,7 +11,7 @@ We are a student group at North Carolina State University that is interested in 
 
 Our goal is to create a friendly environment where students can learn and practice security concepts free of judgement
 
-Join our Discord to keep up to date!
+[Join our Discord server](https://discord.com/invite/tGjRfH7r) to keep up with the latest activities, that's where all communication happens!
 <iframe src="https://discordapp.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
