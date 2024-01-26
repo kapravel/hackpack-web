@@ -64,15 +64,9 @@ There are a few options for Linux Distros. Kali and Parrot both come pre-equipte
 
 <a href="https://help.okta.com/en/prod/Content/Topics/Access-Gateway/deploy-vmwareworkstation.htm"> How to import an OVA file VMware</a>
 
+### _I'm on macOS and I don't want to run VMWare/Virtual Box. Is there anything easier?_
 
-
-### _I'm on Windows and I don't want to run VMWare/Virtual Box. Is there anything easier? (Dom reccomends this)_
-
-Yup! Check out Windows Subsystem for Linux (WSL). It's a great way to get the Linux CLI experience without having to deal with VMWare/Virtualbox. You also get to choose from a wide range of linux distros:
-
-Setup docs: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-
-[Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) in addition to being very pretty lets you juggle different distros + cmd/powershell . 
+Use [Orbstack](https://orbstack.dev/) to get a Linux x86-64 bit VM up and running in seconds.
 
 ### _The Virtual Machine is really slow/laggy; any other options? (Alex reccomends this)_
 
