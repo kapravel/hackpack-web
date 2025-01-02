@@ -16,14 +16,14 @@ h1 {
 }
 </style>
 
-![]({{"https://cdn.cookielaw.org/logos/03fc55fe-0057-4b2f-817d-763e7ecdb316/a7f4c642-c43c-4666-acea-858c0449029c/cisco-logo-transparent.png"}}){:class="picture"}
+![]({{"https://en.wikipedia.org/wiki/Cisco#/media/File:Cisco_logo_blue_2016.svg"}}){:class="picture"}
 
 ![]({{"https://www.merck.com/wp-content/themes/mhh-merck-mco-theme/images/site-logo.svg"}}){:class="picture"}
 
 
 ![]({{"https://www.logolynx.com/images/logolynx/e6/e6f02f64cc35a3b0703e12cfdf7f6746.jpeg"}}){:class="picture"}
 
-![]({{"https://www.cloud.com/content/dam/citrix61/en_us/images/logos/csg-logo.svg"}}){:class="picture"}
+![]({{"https://www.cloud.com/content/dam/cloud/logos/cloud-software-group-logo-color-rgb-625x200.png"}}){:class="picture"}
 {% comment %}
 
 ![]({{"https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/2560px-SAS_logo_horiz.svg.png"}}){:class="picture"}
