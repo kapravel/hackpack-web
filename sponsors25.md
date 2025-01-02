@@ -16,7 +16,7 @@ h1 {
 }
 </style>
 
-![]({{"https://en.wikipedia.org/wiki/Cisco#/media/File:Cisco_logo_blue_2016.svg"}}){:class="picture"}
+![]({{"https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg"}}){:class="picture"}
 
 ![]({{"https://www.merck.com/wp-content/themes/mhh-merck-mco-theme/images/site-logo.svg"}}){:class="picture"}
 
