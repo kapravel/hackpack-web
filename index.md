@@ -15,9 +15,9 @@ Join our Discord server to keep up with the latest activities, that's where all 
 <iframe src="https://discord.com/widget?id=796543947588632586&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
-# 2024 Meeting Times
+# 2026 Meeting Times
 **When:** Fridays at 4:30pm
-**Where:** EB2 1226
+**Where:** EB2 1220
 
 You can join our Discord server with the link above ⬆️
 
