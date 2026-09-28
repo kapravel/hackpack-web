@@ -17,7 +17,7 @@ Join our Discord server to keep up with the latest activities, that's where all 
 
 # 2026 Meeting Times
 **When:** Fridays at 4:30pm
-**Where:** EB2 1220
+**Where:** EB2 1229
 
 You can join our Discord server with the link above ⬆️
 
